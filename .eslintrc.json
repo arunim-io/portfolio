@@ -1,3 +1,24 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "useTabs": false,
+        "endOfLine": "auto",
+        "jsxSingleQuote": true,
+        "printWidth": 100,
+        "singleAttributePerLine": true,
+        "trailingComma": "all"
+      }
+    ]
+  }
 }
