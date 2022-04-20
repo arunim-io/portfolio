@@ -1,20 +1,12 @@
 import "@fontsource/ubuntu";
-import { ThemeProvider } from "@mui/material";
-import { createTheme } from "@mui/system";
 import type { AppProps } from "next/app";
-import "../styles/globals.css";
-
-const theme = createTheme({
-  typography: {
-    fontFamily: ['"Ubuntu"', "sans-serif"],
-  },
-});
+import Theme from "src/config/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
+    <Theme>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </Theme>
   );
 }
 
