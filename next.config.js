@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 // @ts-check
 
-const withMDX = require("@next/mdx")({
+const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
@@ -14,7 +14,7 @@ const withMDX = require("@next/mdx")({
 /** @type {import('next').NextConfig} */
 const nextConfig = withMDX({
   reactStrictMode: true,
-  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 });
 
 module.exports = nextConfig;

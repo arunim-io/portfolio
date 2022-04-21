@@ -1,10 +1,10 @@
-import { ThemeProvider } from "@mui/material";
-import { createTheme } from "@mui/system";
-import { ReactNode } from "react";
+import { ThemeProvider } from '@mui/material';
+import { createTheme } from '@mui/system';
+import { ReactNode } from 'react';
 
 const theme = createTheme({
   typography: {
-    fontFamily: ['"Ubuntu"', "sans-serif"],
+    fontFamily: ['"Ubuntu"', 'sans-serif'],
   },
 });
 
