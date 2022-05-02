@@ -1,12 +1,12 @@
 import '@fontsource/ubuntu';
 import type { AppProps } from 'next/app';
-import Theme from 'src/config/theme';
+import Layout from 'src/config/layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Theme>
+    <Layout>
       <Component {...pageProps} />
-    </Theme>
+    </Layout>
   );
 }
 
