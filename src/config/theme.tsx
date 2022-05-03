@@ -1,4 +1,4 @@
-import { ThemeProvider as MaterialThemeProvider, useMediaQuery } from '@mui/material';
+import { colors, ThemeProvider as MaterialThemeProvider, useMediaQuery } from '@mui/material';
 import { createTheme } from '@mui/system';
 import { ThemeProvider as NextThemeProvider } from 'next-themes';
 import { ReactNode, useMemo } from 'react';
@@ -22,6 +22,7 @@ export default function Theme({ children }: { children: ReactNode }) {
           error: {
             main: '#b71c1c',
           },
+          ...colors,
         },
       }),
     [isDark],

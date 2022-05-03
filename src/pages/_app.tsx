@@ -1,6 +1,6 @@
 import '@fontsource/ubuntu';
+import Layout from 'layout';
 import type { AppProps } from 'next/app';
-import Layout from 'src/config/layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
