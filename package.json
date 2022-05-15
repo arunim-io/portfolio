@@ -7,9 +7,9 @@
   "sideEffects": false,
   "scripts": {
     "build": "npm run build:css && remix build",
-    "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+    "build:css": "tailwindcss -m -i app/styles.css -o app/config/styles.css",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
-    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css"
+    "dev:css": "tailwindcss -w -i app/styles.css -o app/config/styles.css"
   },
   "dependencies": {
     "@apollo/client": "^3.6.2",
@@ -24,7 +24,8 @@
     "daisyui": "^2.15.0",
     "graphql": "^16.5.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "remix-themes": "^1.1.4"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.4.3",
@@ -34,6 +35,7 @@
     "@types/react-dom": "^18.0.4",
     "@types/tailwindcss": "^3.0.10",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.2.0",
     "eslint": "^8.15.0",

@@ -1,6 +1,15 @@
-import { ThemeProvider as NextThemeProvider } from 'next-themes';
-import { ReactNode } from 'react';
+import { createCookieSessionStorage } from '@remix-run/node';
+import { createThemeSessionResolver } from 'remix-themes';
 
-export default function Theme({ children }: { children: ReactNode }) {
-  return <NextThemeProvider attribute='class'>{children}</NextThemeProvider>;
-}
+const sessionStorage = createCookieSessionStorage({
+  cookie: {
+    name: 'remix-themes',
+    secure: true,
+    sameSite: 'lax',
+    secrets: ['s3cr3t'],
+    path: '/',
+    httpOnly: true,
+  },
+});
+
+export const themeSessionResolver = createThemeSessionResolver(sessionStorage);
