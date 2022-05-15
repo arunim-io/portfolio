@@ -1,5 +1,5 @@
-import Theme from 'config/theme';
 import { ReactNode } from 'react';
+import Theme from '~/config/theme';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
