@@ -1,4 +1,4 @@
-import { LoaderFunction, MetaFunction } from '@remix-run/node';
+import type { LoaderFunction, MetaFunction } from '@remix-run/node';
 import {
   Links,
   LiveReload,
@@ -25,7 +25,7 @@ export function links() {
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title: "Arunim's Portfolio",
   viewport: 'width=device-width,initial-scale=1',
 });
 
@@ -44,6 +44,7 @@ export default function AppWithProviders() {
 function App() {
   const data = useLoaderData();
   const [theme] = useTheme();
+
   return (
     <html
       lang='en'

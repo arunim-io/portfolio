@@ -1,16 +1,14 @@
 {
   "extends": [
     "@remix-run/eslint-config",
-    "@remix-run/eslint-config/node",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
     "plugin:prettier/recommended"
   ],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": [
-      "error",
+      "warn",
       {
         "tabWidth": 2,
         "useTabs": false,
