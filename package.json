@@ -30,9 +30,12 @@
     "remix-themes": "^1.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
     "@remix-run/dev": "^1.5.1",
     "@remix-run/eslint-config": "^1.5.1",
     "@remix-run/serve": "^1.5.1",
+    "@remix-run/server-runtime": "^1.5.1",
     "@types/react": "^18.0.10",
     "@types/react-dom": "^18.0.5",
     "@types/tailwindcss": "^3.0.10",

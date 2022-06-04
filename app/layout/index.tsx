@@ -1,13 +1,11 @@
 import type { ReactNode } from 'react';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
 const Layout = ({ children }: { children: ReactNode }) => (
-  <>
-    <Header />
+  <main className="flex h-full w-full">
     {children}
-    <Footer />
-  </>
+    <Sidebar />
+  </main>
 );
 
 export default Layout;
