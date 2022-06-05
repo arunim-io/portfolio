@@ -12,32 +12,39 @@ export default function Sidebar() {
       icon: AiOutlineHome,
     },
     {
-      name: 'About Me',
+      name: 'About',
       link: '/about',
       icon: FiUser,
     },
     {
-      name: 'Contact Me',
+      name: 'Contact',
       link: '/contact',
       icon: FiMail,
     },
     {
-      name: 'My Blog',
+      name: 'Blog',
       link: '/blog',
       icon: BsNewspaper,
     },
   ];
 
   return (
-    <aside className="ml-auto flex h-full min-h-screen w-16 flex-col bg-neutral">
+    <aside className="ml-auto flex h-full min-h-screen flex-col bg-neutral">
       <Link className="mx-auto py-8 text-center" to="/">
         <img alt="logo" className="my-2 h-auto w-6" />
         <img alt="arunim" className="w-12" />
       </Link>
       <nav className="mx-auto mt-36 flex flex-col">
-        {navigation.map(({ link, icon: Icon }) => (
-          <NavLink to={link} key={link} className="p-3">
-            <Icon className="h-7 w-7 text-[#4d4d4e]" />
+        {navigation.map(({ link, icon: Icon, name }) => (
+          <NavLink
+            to={link}
+            key={name}
+            className={({ isActive }) =>
+              `${isActive ? 'text-primary' : 'text-[#4d4d4e]'} p-3 text-center hover:text-primary`
+            }
+          >
+            <Icon className="mx-auto h-8 w-8" />
+            <span className="text-2xs">{name}</span>
           </NavLink>
         ))}
       </nav>

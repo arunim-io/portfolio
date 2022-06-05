@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Fira Code', monospace;
   }
 }

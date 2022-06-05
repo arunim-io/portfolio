@@ -31,11 +31,9 @@ export const meta: MetaFunction = () => ({
 
 export default function AppWithProviders() {
   const data = useLoaderData();
+
   return (
-    <ThemeProvider
-      specifiedTheme={data.theme}
-      themeAction='action/set-theme'
-    >
+    <ThemeProvider specifiedTheme={data.theme} themeAction="action/set-theme">
       <App />
     </ThemeProvider>
   );
@@ -46,10 +44,7 @@ function App() {
   const [theme] = useTheme();
 
   return (
-    <html
-      lang='en'
-      className={theme ?? ''}
-    >
+    <html lang="en" className={theme ?? ''}>
       <head>
         <Meta />
         <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
