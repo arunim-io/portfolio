@@ -1,0 +1,19 @@
+---
+import MainHead from 'components/MainHead.astro';
+import Sidebar from 'components/Sidebar';
+---
+
+<html lang='en'>
+
+<head>
+	<MainHead title='Arunim Portfolio' description="Mugdha Arunim Ahmed's Portfolio" />
+</head>
+
+<body>
+	<div class="container flex flex-col-reverse md:flex-col">
+		<slot />
+		<Sidebar />
+	</div>
+</body>
+
+</html>

@@ -1,10 +1,14 @@
 {
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
   "extends": [
-    "@remix-run/eslint-config",
-    "@remix-run/eslint-config/node",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:json/recommended"
   ],
   "plugins": ["prettier"],
   "rules": {

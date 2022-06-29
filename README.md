@@ -17,19 +17,19 @@
 ## Install
 
 ```sh
-yarn install
+pnpm i
 ```
 
 ## Usage
 
 ```sh
-yarn run start
+pnpm dev
 ```
 
 ## Run tests
 
 ```sh
-yarn test
+pnpm test
 ```
 
 ## Author

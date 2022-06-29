@@ -1,0 +1,15 @@
+---
+import 'styles/global.css';
+
+const { title = 'Arunim Portfolio', description = 'The personal site of Mugdha Arunim Ahmed' } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width, " />
+<title>{title}</title>
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@200;400;700;900&display=swap" rel="stylesheet" />

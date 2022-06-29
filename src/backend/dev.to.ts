@@ -4,7 +4,7 @@ const devToClient = axios.create({
   baseURL: 'https://dev.to/api',
   headers: {
     'Content-Type': 'application/json',
-    'api-key': process.env.DEV_API_KEY as string,
+    'api-key': import.meta.env.DEV_API_KEY,
   },
 });
 
