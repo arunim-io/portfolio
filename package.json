@@ -1,6 +1,6 @@
 {
   "name": "arunim-portfolio",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -11,13 +11,8 @@
   "devDependencies": {
     "@astrojs/react": "^0.2.0",
     "@astrojs/tailwind": "^0.2.2",
-    "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.5",
-    "astro": "^1.0.0-beta.58",
-    "eslint-plugin-json": "^3.1.0",
+    "astro": "^1.0.0-beta.64",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.1.1",
-    "prettier-plugin-tailwindcss": "^0.1.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -25,12 +20,18 @@
     "@apollo/client": "^3.6.9",
     "@react-icons/all-files": "^4.1.0",
     "@supabase/supabase-js": "^1.35.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.0",
-    "@typescript-eslint/parser": "^5.30.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
     "astro-icon": "^0.7.1",
     "axios": "^0.27.2",
-    "daisyui": "^2.17.0",
+    "daisyui": "^2.18.1",
+    "eslint": "8.19.0",
+    "eslint-plugin-json": "^3.1.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.1.0"
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier-plugin-astro": "^0.1.1",
+    "prettier-plugin-tailwindcss": "^0.1.12"
   }
 }

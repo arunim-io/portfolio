@@ -1,3 +1,4 @@
+import type { IconType } from '@react-icons/all-files';
 import { AiOutlineHome } from '@react-icons/all-files/ai/AiOutlineHome';
 import { BsNewspaper } from '@react-icons/all-files/bs/BsNewspaper';
 import { FiMail } from '@react-icons/all-files/fi/FiMail';
@@ -8,43 +9,38 @@ export default function Sidebar() {
   const navigation = [
     {
       name: 'To Home',
-      link: '/',
+      href: '/',
       icon: AiOutlineHome,
     },
     {
       name: 'About Me',
-      link: '/about',
+      href: '/about',
       icon: FiUser,
     },
     {
       name: 'Contact',
-      link: '/contact',
+      href: '/contact',
       icon: FiMail,
     },
     {
       name: 'My Blog',
-      link: '/blog',
+      href: '/blog',
       icon: BsNewspaper,
     },
-  ];
+  ] as { name: string; href: string; icon: IconType }[];
 
   return (
-    <header>
+    <header className="bottom-0 block sm:absolute sm:right-0">
       <section className="navbar my-auto block h-10 bg-base-300 sm:hidden">
         <div className="my-auto flex flex-row transition-none">
           <a className="px-5" href="/">
             <img alt="logo" className="" />
           </a>
           <nav className="ml-auto mr-5 flex flex-row">
-            {navigation.map(({ link, icon: Icon, name }) => (
+            {navigation.map(({ href, icon: Icon }, index) => (
               <a
-                href={link}
-                key={name}
-                // className={`${
-                //   isActive
-                //     ? 'text-primary hover:bg-primary-content hover:text-primary-focus'
-                //     : 'hover:bg-secondary-content hover:text-secondary-focus'
-                // } p-2.5 hover:translate-y-5 hover:rounded-full hover:p-5 hover:transition hover:duration-[250ms] hover:ease-in-out`}
+                key={index}
+                href={href}
                 className="p-2.5 hover:translate-y-5 hover:rounded-full hover:bg-secondary-content hover:p-5 hover:text-secondary-focus hover:transition hover:duration-[250ms] hover:ease-in-out"
               >
                 <Icon className="mx-auto h-6 w-6 md:h-8 md:w-8" />
@@ -59,15 +55,10 @@ export default function Sidebar() {
           <img alt="arunim" className="w-12" />
         </a>
         <nav className="mx-auto mt-36 flex flex-col">
-          {navigation.map(({ link, icon: Icon, name }) => (
+          {navigation.map(({ href, icon: Icon, name }, index) => (
             <a
-              href={link}
-              key={name}
-              // className={`${
-              //   isActive
-              //     ? 'text-primary hover:bg-primary-content hover:text-primary-focus'
-              //     : 'hover:bg-secondary-content hover:text-secondary-focus'
-              // } p-2.5 text-center hover:-translate-x-5 hover:rounded-full hover:p-5 hover:transition hover:duration-[250ms] hover:ease-in-out`}
+              key={index}
+              href={href}
               className="p-2.5 text-center hover:-translate-x-5 hover:rounded-full hover:bg-secondary-content hover:p-5 hover:text-secondary-focus hover:transition hover:duration-[250ms] hover:ease-in-out"
             >
               <Icon className="mx-auto h-6 w-6 md:h-8 md:w-8" />
