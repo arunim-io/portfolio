@@ -5,9 +5,15 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["vite/client", "react", "react-dom"],
     "strict": true,
     "jsx": "react",
-    "baseUrl": "src"
+    "outDir": "./dist",
+    "types": ["astro/client", "vite/client", "react", "react-dom"],
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"],
+      "layouts/*": ["src/layouts/*"],
+      "backend/*": ["backend/*"]
+    }
   }
 }

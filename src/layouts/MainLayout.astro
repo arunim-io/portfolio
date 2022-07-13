@@ -1,6 +1,6 @@
 ---
 import MainHead from 'components/MainHead.astro';
-import Sidebar from 'components/Sidebar';
+import Sidebar from 'components/Sidebar.jsx';
 ---
 
 <html lang='en'>
@@ -10,7 +10,7 @@ import Sidebar from 'components/Sidebar';
 </head>
 
 <body>
-	<main class="container flex flex-col-reverse md:flex-col">
+	<main class="flex flex-col-reverse md:flex-col">
 		<slot />
 		<Sidebar />
 	</main>
