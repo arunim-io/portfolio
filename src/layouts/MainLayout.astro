@@ -1,18 +1,18 @@
 ---
 import MainHead from 'components/MainHead.astro';
-import Sidebar from 'components/Sidebar.jsx';
+
+const { title, description } = Astro.props;
 ---
 
 <html lang='en'>
 
 <head>
-	<MainHead title='Arunim Portfolio' description="Mugdha Arunim Ahmed's Portfolio" />
+	<MainHead title={title} description={description} />
 </head>
 
 <body>
 	<main class="flex flex-col-reverse md:flex-col">
 		<slot />
-		<Sidebar />
 	</main>
 </body>
 

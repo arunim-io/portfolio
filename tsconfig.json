@@ -6,14 +6,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "strict": true,
-    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
     "outDir": "./dist",
     "types": ["astro/client", "vite/client", "react", "react-dom"],
-    "baseUrl": ".",
-    "paths": {
-      "components/*": ["src/components/*"],
-      "layouts/*": ["src/layouts/*"],
-      "backend/*": ["backend/*"]
-    }
+    "baseUrl": "src"
   }
 }
