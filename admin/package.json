@@ -1,0 +1,28 @@
+{
+  "name": "arunim-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Mugdha Arunim Ahmed <mugdhaarunimahmed2017@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "@sanity/eslint-config-studio"
+    ]
+  },
+  "dependencies": {
+    "styled-components": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:arunim-io/arunim-portfolio.git"
+  }
+}
