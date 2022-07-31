@@ -12,5 +12,6 @@ interface ImportMeta {
 
     readonly SANITY_DATASET: string;
     readonly SANITY_PROJECT_ID: string;
+    readonly SANITY_TOKEN: string;
   };
 }
