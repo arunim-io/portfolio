@@ -1,19 +1,30 @@
 ---
 import MainHead from 'components/MainHead.astro';
+import Menu from 'components/Menu.astro';
 
-const { title, description } = Astro.props;
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props as Props;
 ---
 
 <html lang='en'>
 
 <head>
-	<MainHead title={title} description={description} />
+  <MainHead title={title} description={description} />
 </head>
 
 <body>
-	<main class="flex flex-col-reverse md:flex-col">
-		<slot />
-	</main>
+  <header class="container bg-warning text-center">
+    This web site is still under a work in progress. If you have any problem, please feel free to open a new issue on
+    <a href="https://gitlab.com/arunim-io/arunim-portfolio/-/issues" class="link">GitLab</a>.
+  </header>
+  <main class="">
+    <slot />
+  </main>
+  <Menu />
 </body>
 
 </html>

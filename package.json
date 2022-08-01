@@ -4,15 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && tsc --noEmit && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "admin:start": "cd admin && sanity start",
     "admin:build": "cd admin && sanity build"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
-    "@react-icons/all-files": "^4.1.0",
     "@sanity/base": "^2.30.1",
     "@sanity/client": "^3.3.2",
     "@sanity/core": "^2.30.2",
@@ -26,6 +24,7 @@
     "astro-icon": "^0.7.3",
     "axios": "^0.27.2",
     "daisyui": "^2.20.0",
+    "graphql": "^16.5.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
@@ -38,10 +37,9 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
-    "@vitejs/plugin-react": "^2.0.0",
     "animated-tailwindcss": "^3.3.0",
     "astro": "1.0.0-rc.3",
-    "eslint": "8.20.0",
+    "eslint": "8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-json": "^3.1.0",

@@ -1,7 +1,12 @@
 ---
 import '../styles/global.css';
 
-const { title = 'Arunim Portfolio', description = "Mugdha Arunim Ahmed's Portfolio" } = Astro.props;
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Arunim Portfolio', description = "Mugdha Arunim Ahmed's Portfolio" } = Astro.props as Props;
 ---
 
 <meta charset="UTF-8" />
