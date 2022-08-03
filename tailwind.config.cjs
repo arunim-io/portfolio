@@ -6,6 +6,13 @@ const withAnimateCss = require('animated-tailwindcss');
 const config = {
   content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
   plugins: [require('daisyui')],
+  theme: {
+    extend: {
+      zIndex: {
+        max: '9999999999',
+      },
+    },
+  },
   daisyui: {
     themes: ['forest'],
   },

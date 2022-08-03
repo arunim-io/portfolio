@@ -10,21 +10,20 @@ interface Props {
 const { title, description } = Astro.props as Props;
 ---
 
-<html lang='en'>
+<html lang="en">
+  <head>
+    <MainHead title={title} description={description} />
+  </head>
 
-<head>
-  <MainHead title={title} description={description} />
-</head>
-
-<body>
-  <header class="container bg-warning text-center">
-    This web site is still under a work in progress. If you have any problem, please feel free to open a new issue on
-    <a href="https://gitlab.com/arunim-io/arunim-portfolio/-/issues" class="link">GitLab</a>.
-  </header>
-  <main class="">
-    <slot />
-  </main>
-  <Menu />
-</body>
-
+  <body>
+    <header class="container bg-warning text-center">
+      This web site is still under a work in progress. If you have any problem, please feel free to
+      open a new issue on
+      <a href="https://gitlab.com/arunim-io/arunim-portfolio/-/issues" class="link">GitLab</a>.
+    </header>
+    <main class="flex justify-between">
+      <slot />
+      <Menu />
+    </main>
+  </body>
 </html>

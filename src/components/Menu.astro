@@ -1,5 +1,30 @@
 ---
+import { Icon } from 'astro-icon';
 
+const navigation = [
+  {
+    title: 'home',
+    icon: 'eva:home-outline',
+  },
+  {
+    title: 'about',
+    icon: 'ant-design:user-outlined',
+  },
+];
 ---
 
-<nav class=""></nav>
+<aside class="fixed inset-y-0 right-5 z-max h-full text-center transition-all duration-500">
+  <nav class="flex flex-col justify-center min-h-screen">
+    <ul
+      class="border p-5 flex rounded-3xl flex-col gap-2.5 backdrop-blur transition-all sm:overflow-y-visible overflow-y-auto"
+    >
+      {navigation.map(({ icon, title }) => (
+        <li class="tooltip tooltip-left rounded-xl border p-2" data-tip={title}>
+          <a href="#">
+            <Icon name={icon} class="h-5 w-5" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</aside>

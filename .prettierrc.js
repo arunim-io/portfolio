@@ -1,3 +1,6 @@
+const tailwindcss = require('prettier-plugin-tailwindcss');
+const astro = require('prettier-plugin-astro');
+
 module.exports = {
   tabWidth: 2,
   useTabs: false,
@@ -5,5 +8,13 @@ module.exports = {
   printWidth: 100,
   trailingComma: 'all',
   singleQuote: true,
-  plugins: [require('prettier-plugin-tailwindcss'), require('prettier-plugin-astro')],
+  plugins: [tailwindcss, astro],
+  overrides: [
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+  ],
 };

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  * {
     font-family: 'Fira Code', monospace;
   }
 }
