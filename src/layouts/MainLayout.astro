@@ -16,14 +16,14 @@ const { title, description } = Astro.props as Props;
   </head>
 
   <body>
-    <header class="container bg-warning text-center">
+    <header class="bg-warning text-center">
       This web site is still under a work in progress. If you have any problem, please feel free to
       open a new issue on
       <a href="https://gitlab.com/arunim-io/arunim-portfolio/-/issues" class="link">GitLab</a>.
     </header>
-    <main class="flex justify-between">
+    <main class="container sm:px-32 px-10">
       <slot />
-      <Menu />
     </main>
+    <Menu />
   </body>
 </html>

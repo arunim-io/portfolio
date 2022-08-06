@@ -2,26 +2,28 @@
 import { Icon } from 'astro-icon';
 
 const navigation = [
-  {
-    title: 'home',
-    icon: 'eva:home-outline',
-  },
-  {
-    title: 'about',
-    icon: 'ant-design:user-outlined',
-  },
+  { title: 'Home', icon: 'eva:home-outline' },
+  { title: 'About', icon: 'ant-design:user-outlined' },
+  { title: 'Currently', icon: 'ri:pulse-fill' },
+  { title: 'Projects', icon: 'bi:briefcase' },
+  { title: 'Blog', icon: 'mdi:pencil' },
 ];
 ---
 
-<aside class="fixed inset-y-0 right-5 z-max h-full text-center transition-all duration-500">
-  <nav class="flex flex-col justify-center min-h-screen">
+<aside
+  class="fixed sm:inset-y-0 sm:right-5 z-max sm:h-full w-full text-center transition-all duration-500 bottom-5 sm:bottom-0 sm:w-auto"
+>
+  <nav class="flex sm:flex-col justify-center sm:min-h-screen">
     <ul
-      class="border p-5 flex rounded-3xl flex-col gap-2.5 backdrop-blur transition-all sm:overflow-y-visible overflow-y-auto"
+      class="border p-5 flex rounded-3xl sm:flex-col gap-2.5 backdrop-blur transition-all border-gray-500 bg-gray-100"
     >
       {navigation.map(({ icon, title }) => (
-        <li class="tooltip tooltip-left rounded-xl border p-2" data-tip={title}>
+        <li
+          class="tooltip sm:tooltip-left rounded-xl border bg-gray-200 p-2 hover:bg-gray-50"
+          data-tip={title}
+        >
           <a href="#">
-            <Icon name={icon} class="h-5 w-5" />
+            <Icon name={icon} class="h-5 w-5 text-white" />
           </a>
         </li>
       ))}
