@@ -28,6 +28,12 @@
         ]
       },
       "settings": { "react": { "version": "detect" } }
+    },
+    {
+      "files": ["*.cjs"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
     }
   ],
   "parser": "@typescript-eslint/parser",
