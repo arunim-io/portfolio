@@ -12,24 +12,6 @@
   ],
   "overrides": [
     {
-      "extends": ["plugin:react/recommended", "plugin:react/jsx-runtime"],
-      "files": ["*.jsx", "*.tsx"],
-      "parserOptions": { "ecmaFeatures": { "jsx": true } },
-      "plugins": ["react"],
-      "rules": {
-        "react/jsx-sort-props": [
-          "warn",
-          {
-            "callbacksLast": true,
-            "shorthandFirst": true,
-            "noSortAlphabetically": false,
-            "reservedFirst": true
-          }
-        ]
-      },
-      "settings": { "react": { "version": "detect" } }
-    },
-    {
       "files": ["*.cjs"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"

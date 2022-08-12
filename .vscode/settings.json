@@ -1,4 +1,4 @@
 {
-  "cSpell.words": ["SAST"],
-  "typescript.tsdk": "node_modules/typescript/lib"
+	"cSpell.words": ["SAST"],
+	"eslint.workingDirectories": ["./web", "./admin"]
 }
