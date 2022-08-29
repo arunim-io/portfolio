@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 const withAnimateCss = require('animated-tailwindcss');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -10,6 +9,10 @@ const config = {
     extend: {
       animation: {
         typing: '4s typing-erase 4s steps(50, end) infinite, blink-caret .5s step-end infinite',
+      },
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+        mono: ['Fira Code', ...defaultTheme.fontFamily.mono],
       },
       keyframes: {
         'blink-caret': {

@@ -1,6 +1,6 @@
 ---
+import Header from 'components/Header.astro';
 import MainHead from 'components/MainHead.astro';
-import Menu from 'components/Menu.astro';
 
 interface Props {
   title?: string;
@@ -16,14 +16,9 @@ const { title, description } = Astro.props as Props;
   </head>
 
   <body>
-    <header class="bg-warning text-center">
-      This web site is still under a work in progress. If you have any problem, please feel free to
-      open a new issue on
-      <a href="https://gitlab.com/arunim-io/arunim-portfolio/-/issues" class="link">GitLab</a>.
-    </header>
+    <Header />
     <main class="container">
       <slot />
     </main>
-    <Menu />
   </body>
 </html>
