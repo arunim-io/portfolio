@@ -1,18 +1,18 @@
 ---
-import Header from 'components/Header.astro';
-import MainHead from 'components/MainHead.astro';
+import Header from '~/components/Header.astro';
+import MainHead from '~/components/MainHead.astro';
 
-interface Props {
+interface Properties {
   title?: string;
   description?: string;
 }
 
-const { title, description } = Astro.props as Props;
+const { title, description } = Astro.props as Properties;
 ---
 
 <html lang="en">
   <head>
-    <MainHead title={title} description={description} />
+    <MainHead description={description} title={title} />
   </head>
 
   <body>
