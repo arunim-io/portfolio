@@ -1,15 +1,12 @@
 {
+  "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error",
     "jsx": "react-jsx",
     "outDir": "./dist",
-    "types": ["astro/client", "vite/client", "react", "react-dom"],
+    "types": ["astro/client", "@astrojs/image/client"],
     "baseUrl": "src",
     "paths": {
       "~/*": ["./*"]

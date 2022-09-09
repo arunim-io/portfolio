@@ -1,15 +1,37 @@
+---
+import { Icon } from 'astro-icon';
+
+const navigationLinks = [{ name: 'blog', to: '/blog' }];
+---
+
 <header>
   <section class="bg-warning text-center text-sm font-mono">
     This web site is still under a work in progress. If you have any problem, please feel free to
     open a new issue on
     <a class="link" href="https://gitlab.com/arunim-io/arunim-portfolio/-/issues">GitLab</a>.
   </section>
-  <nav class="navbar bg-base-100 justify-between">
-    <a
-      class="uppercase text-2xl font-semibold hover:text-primary hover:underline hover:underline-offset-4"
-      href="/"
-    >
-      Arunim's portfolio
-    </a>
+  <nav class="navbar sm:justify-between px-5 justify-center border-b border-base-300">
+    <section class="navbar-start">
+      <a
+        class="uppercase sm:text-xl font-semibold hover:text-primary hover:underline hover:underline-offset-4"
+        href="/"
+      >
+        Arunim's portfolio
+      </a>
+      <ul class="menu menu-horizontal p-0 uppercase hidden sm:block">
+        {
+          navigationLinks.map(({ name, to }) => (
+            <li>
+              <a class="btn-link hover:text-primary-focus" href={to}>
+                {name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section class="navbar-end">
+      <a href="https://www.github.com/arunim-io"><Icon class="h-7 w-7" name="bi:github" /></a>
+    </section>
   </nav>
 </header>

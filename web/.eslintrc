@@ -25,6 +25,15 @@
         "noSortAlphabetically": false,
         "reservedFirst": true
       }
+    ],
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "allowList": {
+          "devToClient": true
+        },
+        "ignore": ["\\.to$"]
+      }
     ]
   },
   "settings": { "react": { "version": "detect" } }

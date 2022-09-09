@@ -1,10 +1,43 @@
 ---
+import { Image } from '@astrojs/image/components';
+import { Icon } from 'astro-icon';
+
+import ProfilePicture from '~/assets/profile-pic.jpg';
+
 import MainLayout from '~/layouts/MainLayout.astro';
 ---
 
 <MainLayout>
-  <section class="px-20 pt-20 md:px-28 lg:px-40 xl:px-52 2xl:px-60">
-    <h1 class="text-3xl">Yo! Welcome to my Portfolio!</h1>
-    <h2 class="text-2xl my-5">I am <span class="text-primary">Mugdha Arunim Ahmed</span>.</h2>
-  </section>
+  <main class="my-20 mx-5 flex flex-col gap-y-20" id="page">
+    <section class="flex flex-col sm:flex-row gap-x-10" id="intro">
+      <Image
+        alt="Profile Picture"
+        class="object-cover h-60 w-60 sm:h-40 sm:w-40 rounded-full border-[2.5px] border-primary self-center"
+        src={ProfilePicture}
+      />
+      <div class="text-center sm:text-start">
+        <h1 class="text-3xl">Hello! Nice to meet ya!</h1>
+        <h2 class="text-2xl mt-5 mb-10">
+          I am <span class="text-primary">Mugdha Arunim Ahmed</span>.
+        </h2>
+        <div class="grid grid-flow-col-dense justify-center sm:justify-start gap-5">
+          <a href="https://www.facebook.com/arunim.io/">
+            <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:facebook" />
+          </a>
+          <a href="https://www.instagram.com/arunim.io/">
+            <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:instagram" />
+          </a>
+          <a href="https://twitter.com/arunim_io">
+            <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:twitter" />
+          </a>
+          <a href="https://www.github.com/arunim-io">
+            <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:github" />
+          </a>
+          <a href="https://www.gitlab.com/arunim-io">
+            <Icon class="h-7 w-7 fill-current hover:text-primary" name="fa:gitlab" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 </MainLayout>

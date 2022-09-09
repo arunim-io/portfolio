@@ -44,7 +44,7 @@
         "newlines-between": "always-and-inside-groups"
       }
     ],
-    "prettier/prettier": ["warn", {}, { "usePrettierrc": true }],
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
     "unicorn/filename-case": [
       "error",
       {
