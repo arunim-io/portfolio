@@ -1,0 +1,39 @@
+---
+import { Image } from '@astrojs/image/components';
+import { Icon } from 'astro-icon';
+
+import ProfilePicture from '~/assets/profile-pic.jpg';
+---
+
+<section class="flex flex-col sm:flex-row gap-x-10 md:mx-14 justify-center" id="intro">
+  <Image
+    alt="Profile Picture"
+    class="object-cover h-60 w-60 rounded-full border-[2.5px] border-primary self-center mb-5 sm:mb-auto"
+    src={ProfilePicture}
+  />
+  <div class="justify-center flex flex-col">
+    <p class="flex flex-col mb-5 mx-auto">
+      <span class="text-sm text-start">Yo, I'm</span>
+      <br />
+      <span class="text-primary text-2xl lg:text-3xl font-semibold">Mugdha Arunim Ahmed</span>
+      <span class="capitalize">An Entusiastic developer</span>
+    </p>
+    <div class="grid grid-flow-col-dense justify-center sm:justify-start gap-5">
+      <a href="https://www.facebook.com/arunim.io/">
+        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:facebook" />
+      </a>
+      <a href="https://www.instagram.com/arunim.io/">
+        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:instagram" />
+      </a>
+      <a href="https://twitter.com/arunim_io">
+        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:twitter" />
+      </a>
+      <a href="https://www.github.com/arunim-io">
+        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:github" />
+      </a>
+      <a href="https://www.gitlab.com/arunim-io">
+        <Icon class="h-7 w-7 fill-current hover:text-primary" name="fa:gitlab" />
+      </a>
+    </div>
+  </div>
+</section>
