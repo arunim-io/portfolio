@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const devToClient = axios.create({
+const devClient = axios.create({
   baseURL: 'https://dev.to/api',
   headers: {
     'Content-Type': 'application/json',
@@ -8,4 +8,4 @@ const devToClient = axios.create({
   },
 });
 
-export default devToClient;
+export default devClient;

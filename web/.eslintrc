@@ -1,5 +1,10 @@
 {
-  "extends": ["../.eslintrc", "plugin:astro/recommended", "plugin:astro/jsx-a11y-recommended"],
+  "extends": [
+    "../.eslintrc",
+    "plugin:astro/recommended",
+    "plugin:astro/jsx-a11y-recommended",
+    "plugin:tailwindcss/recommended"
+  ],
   "overrides": [
     {
       "files": ["*.astro"],
@@ -8,33 +13,24 @@
         "extraFileExtensions": [".astro"],
         "parser": "@typescript-eslint/parser"
       }
-    },
-    {
-      "files": ["*.{jsx,tsx}"],
-      "extends": ["plugin:react/recommended", "plugin:react/jsx-runtime"]
     }
   ],
   "parserOptions": { "ecmaFeatures": { "jsx": true } },
-  "plugins": ["react"],
   "rules": {
-    "react/jsx-sort-props": [
-      "warn",
-      {
-        "callbacksLast": true,
-        "shorthandFirst": true,
-        "noSortAlphabetically": false,
-        "reservedFirst": true
-      }
-    ],
+    "tailwindcss/classnames-order": 0,
     "unicorn/prevent-abbreviations": [
       "error",
       {
         "allowList": {
           "devToClient": true
         },
-        "ignore": ["\\.to$"]
+        "ignore": ["dev"]
       }
     ]
   },
-  "settings": { "react": { "version": "detect" } }
+  "settings": {
+    "tailwindcss": {
+      "config": "tailwind.config.cjs"
+    }
+  }
 }

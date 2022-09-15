@@ -5,20 +5,20 @@ import { Icon } from 'astro-icon';
 import ProfilePicture from '~/assets/profile-pic.jpg';
 ---
 
-<section class="flex flex-col sm:flex-row gap-x-10 md:mx-14 justify-center" id="intro">
+<section class="flex flex-col justify-center gap-x-10 sm:flex-row md:mx-14" id="intro">
   <Image
     alt="Profile Picture"
-    class="object-cover h-60 w-60 rounded-full border-[2.5px] border-primary self-center mb-5 sm:mb-auto"
+    class="mb-5 h-60 w-60 self-center rounded-full border-[2.5px] border-primary object-cover sm:mb-auto"
     src={ProfilePicture}
   />
-  <div class="justify-center flex flex-col">
-    <p class="flex flex-col mb-5 mx-auto">
-      <span class="text-sm text-start">Yo, I'm</span>
+  <div class="flex flex-col justify-center">
+    <p class="mx-auto mb-5 flex flex-col">
+      <span class="text-start text-sm">Yo, I'm</span>
       <br />
-      <span class="text-primary text-2xl lg:text-3xl font-semibold">Mugdha Arunim Ahmed</span>
+      <span class="text-2xl font-semibold text-primary lg:text-3xl">Mugdha Arunim Ahmed</span>
       <span class="capitalize">An Entusiastic developer</span>
     </p>
-    <div class="grid grid-flow-col-dense justify-center sm:justify-start gap-5">
+    <div class="grid grid-flow-col-dense justify-center gap-5 sm:justify-start">
       <a href="https://www.facebook.com/arunim.io/">
         <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:facebook" />
       </a>
