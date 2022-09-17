@@ -1,12 +1,14 @@
 ---
 import AboutMe from '~/components/AboutMe.astro';
 import Intro from '~/components/Intro.astro';
+import Skills from '~/components/Skills.astro';
 import MainLayout from '~/layouts/MainLayout.astro';
 ---
 
 <MainLayout>
-  <main class="my-20 mx-5 flex flex-col gap-y-20" id="page">
+  <main class="my-20 mx-10 flex flex-col gap-y-20 sm:mx-16 lg:mx-20 justify-center" id="page">
     <Intro />
     <AboutMe />
+    <Skills />
   </main>
 </MainLayout>

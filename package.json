@@ -1,10 +1,7 @@
 {
   "name": "arunim-portfolio",
   "private": true,
-  "scripts": {
-    "dev:web": "cd web && astro dev --host",
-    "dev:admin": "cd admin && sanity start"
-  },
+  "scripts": {},
   "devDependencies": {
     "@types/node": "^18.7.18",
     "@typescript-eslint/eslint-plugin": "^5.37.0",

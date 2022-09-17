@@ -34,6 +34,7 @@ const config = {
     },
   },
   daisyui: {
+    logs: false,
     themes: ['forest'],
   },
 };

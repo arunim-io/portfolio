@@ -1,4 +1,4 @@
 {
-	"cSpell.words": ["SAST"],
-	"eslint.workingDirectories": ["./web", "./admin"]
+  "cSpell.words": ["akar", "SAST"],
+  "eslint.workingDirectories": ["./web", "./admin"]
 }

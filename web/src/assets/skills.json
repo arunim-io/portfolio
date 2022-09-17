@@ -1,0 +1,40 @@
+[
+  {
+    "type": "languages",
+    "items": [
+      { "name": "HTML", "icon": "akar-icons:html-fill" },
+      { "name": "CSS", "icon": "akar-icons:css-fill" },
+      { "name": "JavaScript", "icon": "akar-icons:javascript-fill" },
+      { "name": "TypeScript", "icon": "cib:typescript" },
+      { "name": "Python", "icon": "akar-icons:python-fill" },
+      { "name": "Markdown", "icon": "ion:logo-markdown" },
+      { "name": "Dart", "icon": "simple-icons:dart" }
+    ]
+  },
+  {
+    "type": "Frameworks & Libraries",
+    "items": [
+      { "name": "Django", "icon": "akar-icons:django-fill" },
+      { "name": "React", "icon": "akar-icons:react-fill" },
+      { "name": "tailwindcss", "icon": "file-icons:tailwind" },
+      { "name": "Redux", "icon": "akar-icons:redux-fill" },
+      { "name": "Flutter", "icon": "file-icons:flutter" },
+      { "name": "astro", "icon": "simple-icons:astro" }
+    ]
+  },
+  {
+    "type": "Editors",
+    "items": [
+      { "name": "Visual Studio Code", "icon": "akar-icons:vscode-fill" },
+      { "name": "NeoVim", "icon": "simple-icons:neovim" },
+      { "name": "Android Studio", "icon": "mdi:android-studio" }
+    ]
+  },
+  {
+    "type": "Operating Systems",
+    "items": [
+      { "name": "Windows", "icon": "ant-design:windows-filled" },
+      { "name": "Fedora Linux", "icon": "la:fedora" }
+    ]
+  }
+]

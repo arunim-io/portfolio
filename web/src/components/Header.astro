@@ -18,7 +18,9 @@ const navigationLinks = [{ name: 'blog', to: '/blog' }];
       >
         Arunim's portfolio
       </a>
-      <ul class="menu menu-horizontal p-0 uppercase hidden sm:block">
+    </section>
+    <section class="navbar-end">
+      <ul class="menu menu-horizontal p-0 uppercase">
         {
           navigationLinks.map(({ name, to }) => (
             <li>
@@ -29,8 +31,6 @@ const navigationLinks = [{ name: 'blog', to: '/blog' }];
           ))
         }
       </ul>
-    </section>
-    <section class="navbar-end">
       <a href="https://www.github.com/arunim-io"><Icon class="h-7 w-7" name="bi:github" /></a>
     </section>
   </nav>
