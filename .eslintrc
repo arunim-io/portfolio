@@ -9,9 +9,20 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:json/recommended",
     "plugin:prettier/recommended",
-    "plugin:unicorn/recommended"
+    "plugin:unicorn/recommended",
+    "plugin:astro/recommended",
+    "plugin:astro/jsx-a11y-recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "overrides": [
+    {
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "extraFileExtensions": [".astro"],
+        "parser": "@typescript-eslint/parser"
+      }
+    },
     {
       "files": ["*.cjs"],
       "rules": {
@@ -30,7 +41,6 @@
   },
   "plugins": ["@typescript-eslint", "prettier", "import"],
   "rules": {
-    "@typescript-eslint/no-unused-vars": ["warn"],
     "import/order": [
       "warn",
       {
@@ -44,16 +54,27 @@
         "newlines-between": "always-and-inside-groups"
       }
     ],
-    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "tailwindcss/classnames-order": 0,
     "unicorn/filename-case": [
       "error",
       {
         "cases": {
-          "kebabCase": true,
           "camelCase": true,
           "pascalCase": true
         }
       }
     ]
+  },
+  "settings": {
+    "tailwindcss": {
+      "config": "tailwind.config.cjs"
+    }
   }
 }

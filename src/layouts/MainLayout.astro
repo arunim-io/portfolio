@@ -1,0 +1,23 @@
+---
+import '@fontsource/fira-code';
+import '@fontsource/poppins';
+
+import Header from '~/components/Header.astro';
+
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta charset="utf8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Mugdha Arunim Ahmed's Portfolio" name="description" property="og:description" />
+    <title>Arunim's Portfolio</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
+</html>
