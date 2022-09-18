@@ -1,37 +1,32 @@
 ---
 import { Icon } from 'astro-icon';
-
-const navigationLinks = [{ name: 'blog', to: '/blog' }];
 ---
 
 <header>
-  <section class="bg-warning text-center text-sm font-mono text-white">
+  <section class="bg-warning text-center font-mono text-sm text-white">
     This web site is still under a work in progress. If you have any problem, please feel free to
     open a new issue on
     <a class="link" href="https://gitlab.com/arunim-io/arunim-portfolio/-/issues">GitLab</a>.
   </section>
-  <nav class="navbar sm:justify-between px-5 justify-center border-b">
+  <nav class="navbar justify-center border-b px-5 sm:px-10 md:px-16 lg:px-20 sm:justify-between">
     <section class="navbar-start">
       <a
-        class="uppercase sm:text-xl font-semibold hover:text-primary hover:underline hover:underline-offset-4"
+        class="text-lg font-semibold capitalize hover:text-primary hover:underline hover:underline-offset-4 sm:text-xl"
         href="/"
       >
-        Arunim's portfolio
+        Arunim's Portfolio
       </a>
     </section>
-    <section class="navbar-end">
-      <ul class="menu menu-horizontal p-0 uppercase">
-        {
-          navigationLinks.map(({ name, to }) => (
-            <li>
-              <a class="btn-link hover:text-primary-focus" href={to}>
-                {name}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-      <a href="https://www.github.com/arunim-io"><Icon class="h-7 w-7" name="bi:github" /></a>
+    <section class="navbar-end space-x-5">
+      <a
+        class="uppercase hover:text-primary-focus hover:underline"
+        href="https://arunim-blog.hashnode.dev/"
+      >
+        blog
+      </a>
+      <a href="https://www.github.com/arunim-io">
+        <Icon class="h-7 w-7" name="bi:github" />
+      </a>
     </section>
   </nav>
 </header>

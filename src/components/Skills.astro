@@ -1,24 +1,19 @@
 ---
 import { Icon } from 'astro-icon';
 
-import skills from '~/assets/skills.json';
+import data from '~/assets/data.json';
 ---
 
 <section id="skills">
-  <h1 class="font-semibold text-4xl hover:text-primary hover:cursor-pointer text-center">Skills</h1>
-  <ul class="mt-14 list-disc space-y-10">
+  <h1 class="text-center text-4xl font-semibold hover:cursor-pointer hover:text-primary">Skills</h1>
+  <ul
+    class="mt-14 grid grid-flow-row grid-cols-3 gap-5 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8"
+  >
     {
-      skills.map(({ type, items }) => (
-        <li class="mx-5 list-item">
-          <h1 class="mb-5 text-2xl capitalize">{type}</h1>
-          <ul class="grid grid-flow-row grid-cols-3 gap-y-5 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8">
-            {items?.map(({ icon, name }) => (
-              <li class="flex flex-col items-center justify-center text-center">
-                <Icon name={icon} class="h-24 w-24" />
-                <p>{name}</p>
-              </li>
-            ))}
-          </ul>
+      data.skills.map(({ name, icon }) => (
+        <li class="flex flex-col items-center justify-center space-y-2.5 text-center">
+          <Icon name={icon} class="h-24 w-24" />
+          <p>{name}</p>
         </li>
       ))
     }

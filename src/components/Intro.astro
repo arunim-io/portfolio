@@ -2,6 +2,7 @@
 import { Image } from '@astrojs/image/components';
 import { Icon } from 'astro-icon';
 
+import data from '~/assets/data.json';
 import ProfilePicture from '~/assets/profile-pic.jpg';
 ---
 
@@ -14,26 +15,17 @@ import ProfilePicture from '~/assets/profile-pic.jpg';
   <div class="flex flex-col justify-center">
     <p class="mx-auto mb-5 flex flex-col">
       <span class="text-start text-sm">Yo, I'm</span>
-      <br />
       <span class="text-2xl font-semibold text-primary lg:text-3xl">Mugdha Arunim Ahmed</span>
-      <span class="capitalize">An Entusiastic developer</span>
+      <span class="capitalize">An Enthusiastic developer</span>
     </p>
     <div class="grid grid-flow-col-dense justify-center gap-5 sm:justify-start">
-      <a href="https://www.facebook.com/arunim.io/">
-        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:facebook" />
-      </a>
-      <a href="https://www.instagram.com/arunim.io/">
-        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:instagram" />
-      </a>
-      <a href="https://twitter.com/arunim_io">
-        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:twitter" />
-      </a>
-      <a href="https://www.github.com/arunim-io">
-        <Icon class="h-7 w-7 fill-current hover:text-primary" name="bi:github" />
-      </a>
-      <a href="https://www.gitlab.com/arunim-io">
-        <Icon class="h-7 w-7 fill-current hover:text-primary" name="fa:gitlab" />
-      </a>
+      {
+        data.social.map(({ icon, url }) => (
+          <a href={url}>
+            <Icon class="hover:text-primary h-7 w-7 fill-current" name={icon} />
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>
