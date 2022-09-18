@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Arunim Portfolio 👋</h1>
+<h1 align="center">Welcome to the repository of Arunim's Portfolio 👋</h1>
 <p>
   <a href="https://gitlab.com/arunim-io/arunim-portfolio/-/blob/main/LICENSE" target="_blank">
     <img alt="License: GNU AGPLv3" src="https://img.shields.io/badge/License-GNU AGPLv3-yellow.svg" />
@@ -12,7 +12,7 @@
 
 ### 🏠 [Homepage](https://gitlab.com/arunim-io/arunim-portfolio)
 
-### ✨ [Demo](https://gitlab.com/arunim-io/arunim-portfolio)
+### ✨ [Demo](https://arunim-portfolio.vercel.app/)
 
 ## Install
 
@@ -24,12 +24,6 @@ pnpm i
 
 ```sh
 pnpm dev
-```
-
-## Run tests
-
-```sh
-pnpm test
 ```
 
 ## Author
