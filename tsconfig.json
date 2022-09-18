@@ -4,7 +4,6 @@
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "importsNotUsedAsValues": "error",
-    "jsx": "react-jsx",
     "outDir": "./dist",
     "types": ["astro/client", "@astrojs/image/client"],
     "baseUrl": "src",
