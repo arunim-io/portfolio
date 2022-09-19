@@ -2,10 +2,10 @@
 import { Icon } from 'astro-icon';
 
 import data from '~/assets/data.json';
+import Section from '~/layouts/Section.astro';
 ---
 
-<section id="skills">
-  <h1 class="text-center text-4xl font-semibold hover:cursor-pointer hover:text-primary">Skills</h1>
+<Section id="skills" title="Skills">
   <ul
     class="mt-14 grid grid-flow-row grid-cols-3 gap-5 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8"
   >
@@ -18,4 +18,4 @@ import data from '~/assets/data.json';
       ))
     }
   </ul>
-</section>
+</Section>
