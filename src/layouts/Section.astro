@@ -11,5 +11,7 @@ const { id, title } = Astro.props as Props;
   <h1 class="text-center text-4xl font-semibold hover:cursor-pointer hover:text-primary capitalize">
     {title}
   </h1>
-  <slot />
+  <div class="mt-10">
+    <slot />
+  </div>
 </section>

@@ -6,9 +6,7 @@ import Section from '~/layouts/Section.astro';
 ---
 
 <Section id="skills" title="Skills">
-  <ul
-    class="mt-14 grid grid-flow-row grid-cols-3 gap-5 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8"
-  >
+  <ul class="grid grid-flow-row grid-cols-3 gap-5 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8">
     {
       data.skills.map(({ name, icon }) => (
         <li class="flex flex-col items-center justify-center space-y-2.5 text-center">
