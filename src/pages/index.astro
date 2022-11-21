@@ -1,12 +1,38 @@
 ---
-import AboutMe from '~/components/AboutMe.astro';
-import Intro from '~/components/Intro.astro';
-import Skills from '~/components/Skills.astro';
-import MainLayout from '~/layouts/MainLayout.astro';
+import HomeLayout from '~/layouts/Home.svelte';
+import MainLayout from '~/layouts/Main.astro';
 ---
 
 <MainLayout>
-  <Intro />
-  <AboutMe />
-  <Skills />
+  <HomeLayout>
+    <div class="container mx-auto space-y-8 p-8">
+      <h1>Hello Skeleton</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <hr />
+      <section class="card card-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </section>
+      <hr />
+      <section class="flex space-x-2">
+        <a
+          class="btn btn-filled-primary"
+          href="https://kit.svelte.dev/"
+          target="_blank"
+          rel="noreferrer">SvelteKit</a
+        >
+        <a
+          class="btn btn-filled-accent"
+          href="https://tailwindcss.com/"
+          target="_blank"
+          rel="noreferrer">Tailwind</a
+        >
+        <a
+          class="btn btn-filled-tertiary"
+          href="https://github.com/"
+          target="_blank"
+          rel="noreferrer">GitHub</a
+        >
+      </section>
+    </div>
+  </HomeLayout>
 </MainLayout>

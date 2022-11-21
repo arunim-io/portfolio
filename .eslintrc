@@ -12,7 +12,8 @@
     "plugin:unicorn/recommended",
     "plugin:astro/recommended",
     "plugin:astro/jsx-a11y-recommended",
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "plugin:svelte/prettier"
   ],
   "overrides": [
     {
@@ -28,6 +29,13 @@
       "rules": {
         "@typescript-eslint/no-var-requires": "off"
       }
+    },
+    {
+      "files": ["*.svelte"],
+      "parser": "svelte-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser"
+      }
     }
   ],
   "parser": "@typescript-eslint/parser",
@@ -37,6 +45,7 @@
       "jsx": true,
       "impliedStrict": true
     },
+    "extraFileExtensions": [".svelte"],
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "prettier", "import"],
@@ -61,7 +70,7 @@
         "usePrettierrc": true
       }
     ],
-    "tailwindcss/classnames-order": 0,
+    "tailwindcss/no-custom-classname": 0,
     "unicorn/filename-case": [
       "error",
       {

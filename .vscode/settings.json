@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["akar", "SAST"]
+  "cSpell.words": ["akar", "brainandbones", "SAST"],
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "svelte"]
 }

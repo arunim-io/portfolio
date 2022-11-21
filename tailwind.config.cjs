@@ -1,41 +1,23 @@
+const path = require('node:path');
+
 const withAnimateCss = require('animated-tailwindcss');
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultFontFamily = require('tailwindcss/defaultTheme').fontFamily;
 
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
-  plugins: [require('daisyui')],
+  darkMode: 'class',
+  content: [
+    './src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}',
+    path.join(require.resolve('@brainandbones/skeleton'), '../**/*.{html,js,svelte,ts}'),
+  ],
+  plugins: [require('@brainandbones/skeleton/tailwind/theme.cjs')],
   theme: {
     extend: {
-      animation: {
-        typing: '4s typing-erase 4s steps(50, end) infinite, blink-caret .5s step-end infinite',
-      },
       fontFamily: {
-        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
-        mono: ['Fira Code', ...defaultTheme.fontFamily.mono],
-      },
-      keyframes: {
-        'blink-caret': {
-          'from, to': { borderColor: 'transparent' },
-          '50%': { borderColor: '#1eb854' },
-        },
-        'typing-erase': {
-          '0%': { width: '0' },
-          '80%': { width: '100%' },
-          '90%, 100%': { width: '0' },
-        },
-      },
-      maxWidth: {
-        content: 'max-content',
-      },
-      zIndex: {
-        max: '9999999999',
+        sans: ['Poppins', ...defaultFontFamily.sans],
+        mono: ['Fira Code', ...defaultFontFamily.mono],
       },
     },
-  },
-  daisyui: {
-    logs: false,
-    themes: ['forest'],
   },
 };
 
