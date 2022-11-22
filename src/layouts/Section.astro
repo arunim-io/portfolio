@@ -1,0 +1,15 @@
+---
+export interface Props {
+  id?: string;
+  title: string;
+}
+
+const { id, title } = Astro.props as Props;
+---
+
+<section id={id} class="space-y-10">
+  <h1 class="text-center capitalize hover:cursor-pointer">
+    {title}
+  </h1>
+  <slot />
+</section>

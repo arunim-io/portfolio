@@ -5,7 +5,12 @@
     "allowSyntheticDefaultImports": true,
     "importsNotUsedAsValues": "error",
     "outDir": "./dist",
-    "types": ["astro/client", "@astrojs/image/client"],
+    "types": [
+      "astro/client",
+      "@astrojs/image/client",
+      "unplugin-icons/types/astro",
+      "unplugin-icons/types/svelte"
+    ],
     "baseUrl": "src",
     "paths": {
       "~/*": ["./*"]

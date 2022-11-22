@@ -2,11 +2,11 @@
   import { AppShell } from '@brainandbones/skeleton';
 
   import Header from '~/components/Header.svelte';
-  import Sidebar from '~/components/Sidebar.svelte';
 </script>
 
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell>
   <Header slot="header" />
-  <Sidebar slot="sidebarLeft" />
-  <slot />
+  <main class="flex flex-col gap-y-20 my-20 mx-10 sm:mx-16 lg:mx-20">
+    <slot />
+  </main>
 </AppShell>

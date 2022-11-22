@@ -13,7 +13,8 @@
     "plugin:astro/recommended",
     "plugin:astro/jsx-a11y-recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:svelte/prettier"
+    "plugin:svelte/prettier",
+    "./.eslintrc-auto-import.json"
   ],
   "overrides": [
     {

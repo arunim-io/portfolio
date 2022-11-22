@@ -1,4 +1,8 @@
 {
   "cSpell.words": ["akar", "brainandbones", "SAST"],
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "svelte"]
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "svelte"],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": ["class"]
 }

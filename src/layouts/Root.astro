@@ -1,8 +1,9 @@
 ---
+import '@brainandbones/skeleton/styles/all.css';
 import '@fontsource/fira-code';
 import '@fontsource/poppins';
 
-import '@brainandbones/skeleton/styles/all.css';
+import MainLayout from './Main.svelte';
 
 import '../styles/global.css';
 import '../styles/theme.css';
@@ -17,6 +18,8 @@ import '../styles/theme.css';
     <title>Arunim's Portfolio</title>
   </head>
   <body>
-    <slot />
+    <MainLayout>
+      <slot />
+    </MainLayout>
   </body>
 </html>

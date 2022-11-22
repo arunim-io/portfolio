@@ -11,19 +11,20 @@
     "@astrojs/svelte": "^1.0.2",
     "@fontsource/fira-code": "^4.5.12",
     "@fontsource/poppins": "^4.5.10",
-    "astro-compress": "^1.1.7",
-    "astro-icon": "^0.8.0",
+    "astro-compress": "^1.1.8",
     "daisyui": "^2.41.0",
-    "svelte": "^3.53.1"
+    "svelte": "^3.53.1",
+    "unplugin-icons": "^0.14.14"
   },
   "devDependencies": {
     "@astrojs/image": "^0.11.6",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.1.2",
     "@brainandbones/skeleton": "^0.76.0",
+    "@iconify-json/mdi": "^1.1.35",
     "@types/node": "^18.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
     "animated-tailwindcss": "^3.3.0",
     "astro": "1.6.10",
     "eslint": "8.28.0",
@@ -39,6 +40,7 @@
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.7.0",
     "prettier-plugin-svelte": "^2.8.1",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "unplugin-auto-import": "^0.11.5"
   }
 }
