@@ -4,6 +4,9 @@
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "importsNotUsedAsValues": "error",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext"],
     "outDir": "./dist",
     "types": [
       "astro/client",
