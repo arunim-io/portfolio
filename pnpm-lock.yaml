@@ -8,7 +8,9 @@ specifiers:
   '@brainandbones/skeleton': ^0.76.0
   '@fontsource/fira-code': ^4.5.12
   '@fontsource/poppins': ^4.5.10
+  '@iconify-json/material-symbols': ^1.1.24
   '@iconify-json/mdi': ^1.1.36
+  '@iconify-json/simple-icons': ^1.1.36
   '@prisma/client': ^4.6.1
   '@types/node': ^18.11.9
   '@typescript-eslint/eslint-plugin': ^5.44.0
@@ -24,7 +26,7 @@ specifiers:
   eslint-plugin-json: ^3.1.0
   eslint-plugin-jsx-a11y: ^6.6.1
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-svelte: ^2.13.0
+  eslint-plugin-svelte: ^2.13.1
   eslint-plugin-tailwindcss: ^3.7.0
   eslint-plugin-unicorn: ^45.0.0
   prettier: ^2.8.0
@@ -51,7 +53,9 @@ devDependencies:
   '@astrojs/sitemap': 1.0.0
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
   '@brainandbones/skeleton': 0.76.0
+  '@iconify-json/material-symbols': 1.1.24
   '@iconify-json/mdi': 1.1.36
+  '@iconify-json/simple-icons': 1.1.36
   '@types/node': 18.11.9
   '@typescript-eslint/eslint-plugin': 5.44.0_fnsv2sbzcckq65bwfk7a5xwslu
   '@typescript-eslint/parser': 5.44.0_hsf322ms6xhhd4b5ne6lb74y4a
@@ -64,7 +68,7 @@ devDependencies:
   eslint-plugin-json: 3.1.0
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.28.0
   eslint-plugin-prettier: 4.2.1_cwlo2dingkvfydnaculr42urve
-  eslint-plugin-svelte: 2.13.0_xgu65rlhscpnxffotiaicv6m5i
+  eslint-plugin-svelte: 2.13.1_xgu65rlhscpnxffotiaicv6m5i
   eslint-plugin-tailwindcss: 3.7.0
   eslint-plugin-unicorn: 45.0.0_eslint@8.28.0
   prettier: 2.8.0
@@ -580,8 +584,20 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
+  /@iconify-json/material-symbols/1.1.24:
+    resolution: {integrity: sha512-yg7KGVbrQ5NU/BZWj+rfEoeR3JA8ehCvY1SgrW+iuZjzZk3qm1sQcwQ5AktvEx/Hx9qnqQMMpscQJRPJxOq6rQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/mdi/1.1.36:
     resolution: {integrity: sha512-3aWCVjDIseO8COo8zPkmxOZUFjdWsvTQQnk6zVrOaJh2K8oKuBznw10FSJZgQM7qAn6S54/oejyqkWfODRZV1Q==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/simple-icons/1.1.36:
+    resolution: {integrity: sha512-OYI8YNyYN9JJe3dFTtQBnOLJaEGMDg66Y8hSOTlKmXfHGpWvd2AK8qzKcuh7Xs3R5BNUk2Fik5z1VNS+0vIP+g==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -2618,8 +2634,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-svelte/2.13.0_xgu65rlhscpnxffotiaicv6m5i:
-    resolution: {integrity: sha512-/lNRny2zZmvCqm5DPE7Yt7WaP6ESCcPhiUdeBA57r1SOaCgBGUk6eUX1LtnmV/L3dXMs5ammVG5iX0UpjWF0Kg==}
+  /eslint-plugin-svelte/2.13.1_xgu65rlhscpnxffotiaicv6m5i:
+    resolution: {integrity: sha512-PZ0h8mm9vdVndLNoCUVujYFuWpp+AmCT5GnhjZ1q4dR3zLgQdL+V7Ce0KI1EQ8/4D6GExLMYcOd8vgGUdxxOxg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
@@ -2638,7 +2654,7 @@ packages:
       postcss-safe-parser: 6.0.0_postcss@8.4.19
       sourcemap-codec: 1.4.8
       svelte: 3.53.1
-      svelte-eslint-parser: 0.21.0_svelte@3.53.1
+      svelte-eslint-parser: 0.22.0_svelte@3.53.1
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -5565,8 +5581,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte-eslint-parser/0.21.0_svelte@3.53.1:
-    resolution: {integrity: sha512-RGUPcGPZxjA4xLBrdT5xkw/AdlFOOqRaizLGJLgpjowROfBkAZsPlnNQbAXzPuWnaELjCCQkYUlKaQ6SvzPS2w==}
+  /svelte-eslint-parser/0.22.0_svelte@3.53.1:
+    resolution: {integrity: sha512-KQut6bb5dPwQ1SYTN/m5rxCkEDWDXiZpOXl05afNKGnjCMC5ZpGVrJM7BtFGwV2kPFeIiwRW+ofY3GxfqFBNpw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       svelte: ^3.37.0

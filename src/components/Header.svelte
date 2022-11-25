@@ -1,5 +1,10 @@
 <script lang="ts">
   import { AppBar } from '@brainandbones/skeleton';
+
+  const links = [
+    { name: 'About Me', href: '/about' },
+    { name: 'Blog', href: '/blog' },
+  ];
 </script>
 
 <header>
@@ -12,10 +17,12 @@
     <svelte:fragment slot="lead">
       <h3>Arunim's Portfolio</h3>
     </svelte:fragment>
-    <svelte:fragment slot="trail">
-      <div>
-        <a class="btn btn-xl" href="/blog" target="_blank" rel="noreferrer"> Blog </a>
-      </div>
-    </svelte:fragment>
+    <div slot="trail">
+      {#each links as { href, name }}
+        <a {href} class="btn hover:text-primary-500 hover:underline">
+          {name}
+        </a>
+      {/each}
+    </div>
   </AppBar>
 </header>

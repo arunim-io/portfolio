@@ -7,6 +7,8 @@ import MainLayout from './Main.svelte';
 
 import '../styles/global.css';
 import '../styles/theme.css';
+
+const properties = Astro.props;
 ---
 
 <html lang="en" class="dark">
@@ -19,7 +21,7 @@ import '../styles/theme.css';
   </head>
   <body>
     <MainLayout>
-      <slot />
+      <slot {...properties} />
     </MainLayout>
   </body>
 </html>
