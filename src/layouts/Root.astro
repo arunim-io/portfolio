@@ -1,4 +1,6 @@
 ---
+import type { HTMLAttributes } from 'astro/types';
+
 import '@brainandbones/skeleton/styles/all.css';
 import '@fontsource/fira-code';
 import '@fontsource/poppins';
@@ -8,7 +10,7 @@ import MainLayout from './Main.svelte';
 import '../styles/global.css';
 import '../styles/theme.css';
 
-const properties = Astro.props;
+const properties = Astro.props as HTMLAttributes<'div'>;
 ---
 
 <html lang="en" class="dark">
@@ -19,7 +21,7 @@ const properties = Astro.props;
     <meta content="Mugdha Arunim Ahmed's Portfolio" name="description" property="og:description" />
     <title>Arunim's Portfolio</title>
   </head>
-  <body>
+  <body class={import.meta.env.DEV ? 'debug-screens' : undefined}>
     <MainLayout>
       <slot {...properties} />
     </MainLayout>

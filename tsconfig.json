@@ -8,7 +8,12 @@
     "esModuleInterop": true,
     "lib": ["ESNext"],
     "outDir": "./dist",
-    "types": ["astro/client", "@astrojs/image/client", "unplugin-icons/types/svelte"],
+    "types": [
+      "astro/client",
+      "@astrojs/image/client",
+      "astro/astro-jsx",
+      "unplugin-icons/types/svelte"
+    ],
     "baseUrl": "src",
     "paths": {
       "~/*": ["./*"]

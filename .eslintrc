@@ -84,9 +84,7 @@
     "unicorn/prevent-abbreviations": [
       "error",
       {
-        "allowList": {
-          "Props": true
-        }
+        "allowList": {}
       }
     ]
   },

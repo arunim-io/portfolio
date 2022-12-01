@@ -10,7 +10,10 @@ const config = {
     path.join(require.resolve('@brainandbones/skeleton'), '../**/*.{html,js,svelte,ts}'),
   ],
   darkMode: 'class',
-  plugins: [require('@brainandbones/skeleton/tailwind/theme.cjs')],
+  plugins: [
+    require('@brainandbones/skeleton/tailwind/theme.cjs'),
+    require('tailwindcss-debug-screens'),
+  ],
   theme: {
     extend: {
       fontFamily: {
