@@ -1,5 +1,6 @@
 const path = require('node:path');
 
+const plugin = require('tailwindcss/plugin');
 const withAnimateCss = require('animated-tailwindcss');
 const defaultFontFamily = require('tailwindcss/defaultTheme').fontFamily;
 
@@ -13,12 +14,28 @@ const config = {
   plugins: [
     require('@brainandbones/skeleton/tailwind/theme.cjs'),
     require('tailwindcss-debug-screens'),
+    plugin(function ({ addComponents }) {
+      addComponents({});
+    }),
   ],
   theme: {
     extend: {
+      backgroundPosition: {
+        'top-center': 'top center',
+      },
       fontFamily: {
         sans: ['Poppins', ...defaultFontFamily.sans],
         mono: ['Fira Code', ...defaultFontFamily.mono],
+      },
+      keyframes: {
+        twinkling: {
+          from: {
+            'background-position': '0 0',
+          },
+          to: {
+            'background-position': '-100000px 5000px',
+          },
+        },
       },
     },
   },
