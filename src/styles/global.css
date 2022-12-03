@@ -2,3 +2,11 @@ html,
 body {
   @apply h-full overflow-hidden;
 }
+
+.stars {
+  @apply absolute z-0 block h-full w-full md:w-full bg-black bg-[url('/img/stars.png')] bg-top-center bg-repeat;
+}
+
+.twinkling {
+  @apply absolute z-[1] block h-full w-full animate-[twinkling_2500s_linear_infinite] bg-transparent bg-[url('/img/twinkling.png')] bg-top-center bg-repeat;
+}

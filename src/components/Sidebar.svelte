@@ -9,8 +9,8 @@
     <AppRailTile tag="a" href="/">Arunim's Portfolio</AppRailTile>
   </section>
   <section slot="trail">
-    {#each links as { href, icon: Icon }}
-      <AppRailTile tag="a" {href}>
+    {#each links as { href, icon: Icon, name }}
+      <AppRailTile tag="a" {href} label={name}>
         <Icon class="h-10 w-10" />
       </AppRailTile>
     {/each}
