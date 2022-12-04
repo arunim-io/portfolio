@@ -1,11 +1,11 @@
 ---
 import TechList from '~/components/TechList.svelte';
+import Document from '~/layouts/Document.astro';
 import Main from '~/layouts/Main.svelte';
-import Root from '~/layouts/Root.astro';
 ---
 
-<Root>
-  <Main client:idle>
+<Document>
+  <Main client:load>
     <section class="space-y-10">
       <h1>About Me</h1>
       <div class="space-y-5">
@@ -33,4 +33,4 @@ import Root from '~/layouts/Root.astro';
       <TechList />
     </section>
   </Main>
-</Root>
+</Document>

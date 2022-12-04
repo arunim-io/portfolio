@@ -1,11 +1,11 @@
-<script lang="ts">
-  import { AppShell, Drawer } from '@brainandbones/skeleton';
+<script>
+  import { AppShell } from '@brainandbones/skeleton';
 
   import Header from '~/components/Header.svelte';
-  import { headerDrawerStore } from '~/stores';
+  import HeaderDrawer from '~/components/HeaderDrawer.svelte';
 </script>
 
-<Drawer open={headerDrawerStore} position="right">(contents)</Drawer>
+<HeaderDrawer />
 
 <AppShell>
   <Header slot="header" />

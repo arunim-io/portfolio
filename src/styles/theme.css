@@ -1,4 +1,6 @@
 :root {
+  color-scheme: dark;
+
   /* =~= Theme Styles =~= */
   --theme-border-base: 2px;
   --theme-font-family-heading: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
