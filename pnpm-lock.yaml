@@ -11,13 +11,13 @@ specifiers:
   '@iconify-json/material-symbols': ^1.1.25
   '@iconify-json/mdi': ^1.1.36
   '@iconify-json/simple-icons': ^1.1.37
-  '@prisma/client': ^4.7.0
+  '@prisma/client': ^4.7.1
   '@types/node': ^18.11.10
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
   animated-tailwindcss: ^3.3.0
   astro: 1.6.12
-  astro-compress: ^1.1.15
+  astro-compress: ^1.1.17
   daisyui: ^2.42.1
   eslint: 8.28.0
   eslint-config-prettier: ^8.5.0
@@ -26,25 +26,24 @@ specifiers:
   eslint-plugin-json: ^3.1.0
   eslint-plugin-jsx-a11y: ^6.6.1
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-svelte: ^2.13.1
+  eslint-plugin-svelte: ^2.14.0
   eslint-plugin-tailwindcss: ^3.7.1
   eslint-plugin-unicorn: ^45.0.1
   prettier: ^2.8.0
   prettier-plugin-astro: ^0.7.0
   prettier-plugin-svelte: ^2.8.1
-  prisma: ^4.7.0
+  prisma: ^4.7.1
   svelte: ^3.53.1
   tailwindcss-debug-screens: ^2.2.1
   typescript: ^4.9.3
-  unplugin-auto-import: ^0.12.0
   unplugin-icons: ^0.14.14
 
 dependencies:
   '@astrojs/svelte': 1.0.2_os2gjyqcwbedh5v63cfdi4dytm
   '@fontsource/fira-code': 4.5.12
   '@fontsource/poppins': 4.5.10
-  '@prisma/client': 4.7.0_prisma@4.7.0
-  astro-compress: 1.1.15
+  '@prisma/client': 4.7.1_prisma@4.7.1
+  astro-compress: 1.1.17
   daisyui: 2.42.1_syixtvdwrt6kp57oiqleef6t5m
   svelte: 3.53.1
   unplugin-icons: 0.14.14
@@ -69,16 +68,15 @@ devDependencies:
   eslint-plugin-json: 3.1.0
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.28.0
   eslint-plugin-prettier: 4.2.1_cwlo2dingkvfydnaculr42urve
-  eslint-plugin-svelte: 2.13.1_xgu65rlhscpnxffotiaicv6m5i
+  eslint-plugin-svelte: 2.14.0_xgu65rlhscpnxffotiaicv6m5i
   eslint-plugin-tailwindcss: 3.7.1
   eslint-plugin-unicorn: 45.0.1_eslint@8.28.0
   prettier: 2.8.0
   prettier-plugin-astro: 0.7.0
   prettier-plugin-svelte: 2.8.1_3ndnxlh52lolrqe4kgjgbxb3xa
-  prisma: 4.7.0
+  prisma: 4.7.1
   tailwindcss-debug-screens: 2.2.1_tailwindcss@3.2.4
   typescript: 4.9.3
-  unplugin-auto-import: 0.12.0
 
 packages:
 
@@ -107,10 +105,6 @@ packages:
   /@antfu/utils/0.6.3:
     resolution: {integrity: sha512-sEYpyyKUPOew9QsXZ8feRVMzW6DWLviwOl+/ap06UQW02A8Srbc95CPHVm4eUbiBzBgD46eyIT+przv//KSSlQ==}
     dev: false
-
-  /@antfu/utils/0.7.0:
-    resolution: {integrity: sha512-tH38JQEFLOdvZJC32ZbPTvWOQzxEtOQh5jOqBPDLw8sxBr0PFF+f2Csgwb7mRpD0QB1xu+PDoAifIPiCNneeNA==}
-    dev: true
 
   /@astrojs/compiler/0.29.17:
     resolution: {integrity: sha512-6ZbRGVunUMHxROD9Cleqkrfrj/kM9o43nLVwycdxCexCB5G372evy2ZM46LhaG/k5B5yC0PByNHTaGny0ll3iQ==}
@@ -673,8 +667,8 @@ packages:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
     dev: true
 
-  /@nikolarhristov/pipeline/0.0.10:
-    resolution: {integrity: sha512-8njHnJpRshYtu14QXGgbTKE7sY9HScwKwWuq0qx9g5VB3fUXWgluPFEAMovmS8ABvh8RjLTht1sxajswB8FUzg==}
+  /@nikolarhristov/pipeline/0.0.12:
+    resolution: {integrity: sha512-LEVBD2AC3l/QRXxwqB24TbShxpt3rGQcUyxPE4pIqCuJWl/8AvIWy8QcK3F7OvF4XlIG/tQ2piN1PcKZ/bPvJQ==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
@@ -686,7 +680,7 @@ packages:
       html-minifier-terser: 7.1.0
       sharp: 0.31.2
       svgo: 3.0.2
-      terser: 5.16.0
+      terser: 5.16.1
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
@@ -723,8 +717,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@prisma/client/4.7.0_prisma@4.7.0:
-    resolution: {integrity: sha512-keXMa0oJWJGOzMEFKp+CEgzJPwnOtGSrnTWw6qMYxnypYrRFdNxqyA06EzELZexBhgM4oLooZ1jDJ3iy46wExA==}
+  /@prisma/client/4.7.1_prisma@4.7.1:
+    resolution: {integrity: sha512-/GbnOwIPtjiveZNUzGXOdp7RxTEkHL4DZP3vBaFNadfr6Sf0RshU5EULFzVaSi9i9PIK9PYd+1Rn7z2B2npb9w==}
     engines: {node: '>=14.17'}
     requiresBuild: true
     peerDependencies:
@@ -733,16 +727,16 @@ packages:
       prisma:
         optional: true
     dependencies:
-      '@prisma/engines-version': 4.7.0-74.39190b250ebc338586e25e6da45e5e783bc8a635
-      prisma: 4.7.0
+      '@prisma/engines-version': 4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c
+      prisma: 4.7.1
     dev: false
 
-  /@prisma/engines-version/4.7.0-74.39190b250ebc338586e25e6da45e5e783bc8a635:
-    resolution: {integrity: sha512-ImczGEQ8NS1OUApEeyAGxC4uLTtQp0wI1+2wM4MeQLVwIQbyMHk1vOhWWE8Pwbi3rnzLcPvsIrd9sm6oNXhERw==}
+  /@prisma/engines-version/4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c:
+    resolution: {integrity: sha512-Bd4LZ+WAnUHOq31e9X/ihi5zPlr4SzTRwUZZYxvWOxlerIZ7HJlVa9zXpuKTKLpI9O1l8Ec4OYCKsivWCs5a3Q==}
     dev: false
 
-  /@prisma/engines/4.7.0:
-    resolution: {integrity: sha512-afKrVFktaZ1pOK12/uFl2hRsBWIJZuC5FdDtacuKk5x/mR+rC5AbA+PlN3ZCZbmYTaeiBMHjcU5wbT5z2N3nSQ==}
+  /@prisma/engines/4.7.1:
+    resolution: {integrity: sha512-zWabHosTdLpXXlMefHmnouhXMoTB1+SCbUU3t4FCmdrtIOZcarPKU3Alto7gm/pZ9vHlGOXHCfVZ1G7OIrSbog==}
     requiresBuild: true
 
   /@proload/core/0.3.3:
@@ -759,20 +753,6 @@ packages:
     dependencies:
       '@proload/core': 0.3.3
       tsm: 2.2.2
-    dev: true
-
-  /@rollup/pluginutils/5.0.2:
-    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-    dependencies:
-      '@types/estree': 1.0.0
-      estree-walker: 2.0.2
-      picomatch: 2.3.1
     dev: true
 
   /@sveltejs/vite-plugin-svelte/1.2.0_svelte@3.53.1+vite@3.2.4:
@@ -1271,10 +1251,10 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /astro-compress/1.1.15:
-    resolution: {integrity: sha512-DOjll0tJ4ZaV/m3HtVMlpYbbSiQDmjdTOX7uTjSG+i0g0UHZdQ2Z2aDfDKLYpze+Eax9Y7KF5c839ysArZ4cMA==}
+  /astro-compress/1.1.17:
+    resolution: {integrity: sha512-VYZZdTndFqICu5sNKsIk1kOq+fc878AIJQa+1dQPVilKCSOi2Jb62IHVpRESvKyvCzDq4ddDEHo3MpAkKvuUMw==}
     dependencies:
-      '@nikolarhristov/pipeline': 0.0.10
+      '@nikolarhristov/pipeline': 0.0.12
     dev: false
 
   /astro-eslint-parser/0.9.0:
@@ -2674,8 +2654,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-svelte/2.13.1_xgu65rlhscpnxffotiaicv6m5i:
-    resolution: {integrity: sha512-PZ0h8mm9vdVndLNoCUVujYFuWpp+AmCT5GnhjZ1q4dR3zLgQdL+V7Ce0KI1EQ8/4D6GExLMYcOd8vgGUdxxOxg==}
+  /eslint-plugin-svelte/2.14.0_xgu65rlhscpnxffotiaicv6m5i:
+    resolution: {integrity: sha512-TOlOk08vghQ97wAExxL785rrK65v7BwVbXY1UTY/TiWGpHh1Hn0IMfE4MUB+ij2Lv442GKw2873Gq4aUHqSgsA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
@@ -2868,10 +2848,6 @@ packages:
     dependencies:
       '@types/estree-jsx': 1.0.0
       '@types/unist': 2.0.6
-    dev: true
-
-  /estree-walker/2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
     dev: true
 
   /esutils/2.0.3:
@@ -3341,7 +3317,7 @@ packages:
       entities: 4.4.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.16.0
+      terser: 5.16.1
     dev: false
 
   /html-void-elements/2.0.1:
@@ -3767,6 +3743,7 @@ packages:
   /local-pkg/0.4.2:
     resolution: {integrity: sha512-mlERgSPrbxU3BP4qBqAvvwlgW4MTg78iwJdGGnv7kibKjWcJksrG3t6LB5lXI93wXRDvG4NpUgJFmTG4T6rdrg==}
     engines: {node: '>=14'}
+    dev: false
 
   /locate-path/5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -3823,6 +3800,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
+    dev: false
 
   /markdown-table/3.0.2:
     resolution: {integrity: sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==}
@@ -4340,15 +4318,6 @@ packages:
       minimist: 1.2.6
     dev: false
 
-  /mlly/1.0.0:
-    resolution: {integrity: sha512-QL108Hwt+u9bXdWgOI0dhzZfACovn5Aen4Xvc8Jasd9ouRH4NjnrXEiyP3nVvJo91zPlYjVRckta0Nt2zfoR6g==}
-    dependencies:
-      acorn: 8.8.1
-      pathe: 1.0.0
-      pkg-types: 1.0.1
-      ufo: 1.0.0
-    dev: true
-
   /mri/1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -4680,10 +4649,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathe/1.0.0:
-    resolution: {integrity: sha512-nPdMG0Pd09HuSsr7QOKUXO2Jr9eqaDiZvDwdyIhNG5SHYujkQHYKDfGQkulBxvbDHz8oHLsTgKN86LSwYzSHAg==}
-    dev: true
-
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
@@ -4705,14 +4670,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
-    dev: true
-
-  /pkg-types/1.0.1:
-    resolution: {integrity: sha512-jHv9HB+Ho7dj6ItwppRDDl0iZRYBD0jsakHXtFgoLr+cHSF6xC+QL54sJmWxyGxOLYSHm0afhXhXcQDQqH9z8g==}
-    dependencies:
-      jsonc-parser: 3.2.0
-      mlly: 1.0.0
-      pathe: 1.0.0
     dev: true
 
   /pluralize/8.0.0:
@@ -4873,13 +4830,13 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /prisma/4.7.0:
-    resolution: {integrity: sha512-VsecNo0Ca3+bDTzSpJqIpdupKVhhQ8aOYeWc09JlUM89knqvhSrlMrg0U8BiOD4tFrY1OPaCcraK8leDBxKMBg==}
+  /prisma/4.7.1:
+    resolution: {integrity: sha512-CCQP+m+1qZOGIZlvnL6T3ZwaU0LAleIHYFPN9tFSzjs/KL6vH9rlYbGOkTuG9Q1s6Ki5D0LJlYlW18Z9EBUpGg==}
     engines: {node: '>=14.17'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@prisma/engines': 4.7.0
+      '@prisma/engines': 4.7.1
 
   /prismjs/1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
@@ -5229,10 +5186,6 @@ packages:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: true
 
-  /scule/1.0.0:
-    resolution: {integrity: sha512-4AsO/FrViE/iDNEPaAQlb77tf0csuq27EsVpy6ett584EcRTp6pTDLoGWVxCD77y5iU5FauOvhsI4o1APwPoSQ==}
-    dev: true
-
   /section-matter/1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
@@ -5532,12 +5485,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /strip-literal/1.0.0:
-    resolution: {integrity: sha512-5o4LsH1lzBzO9UFH63AJ2ad2/S2AVx6NtjOcaz+VTT2h1RiRvbipW72z8M/lxEhcPHDBQwpDrnTF7sXy/7OwCQ==}
-    dependencies:
-      acorn: 8.8.1
-    dev: true
-
   /style-to-object/0.3.0:
     resolution: {integrity: sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==}
     dependencies:
@@ -5745,8 +5692,8 @@ packages:
       readable-stream: 3.6.0
     dev: false
 
-  /terser/5.16.0:
-    resolution: {integrity: sha512-KjTV81QKStSfwbNiwlBXfcgMcOloyuRdb62/iLFPGBcVNF4EXjhdYBhYHmbJpiBrVxZhDvltE11j+LBQUxEEJg==}
+  /terser/5.16.1:
+    resolution: {integrity: sha512-xvQfyfA1ayT0qdK47zskQgRZeWLoOQ8JQ6mIgRGVNwZKdQMU+5FkCBjmv4QjcrTzyZquRw2FVtlJSRUmMKQslw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -5878,10 +5825,6 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
-  /ufo/1.0.0:
-    resolution: {integrity: sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==}
-    dev: true
-
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
     dependencies:
@@ -5905,24 +5848,6 @@ packages:
       is-plain-obj: 4.1.0
       trough: 2.1.0
       vfile: 5.3.5
-    dev: true
-
-  /unimport/1.0.1:
-    resolution: {integrity: sha512-SEPKl3uyqUvi6c0MnyCmUF9H07CuC9j9p2p33F03LmegU0sxjpnjL0fLKAhh7BTfcKaJKj+1iOiAFtg7P3m5mQ==}
-    dependencies:
-      '@rollup/pluginutils': 5.0.2
-      escape-string-regexp: 5.0.0
-      fast-glob: 3.2.12
-      local-pkg: 0.4.2
-      magic-string: 0.26.7
-      mlly: 1.0.0
-      pathe: 1.0.0
-      pkg-types: 1.0.1
-      scule: 1.0.0
-      strip-literal: 1.0.0
-      unplugin: 1.0.0
-    transitivePeerDependencies:
-      - rollup
     dev: true
 
   /unist-builder/3.0.0:
@@ -5995,25 +5920,6 @@ packages:
       unist-util-visit-parents: 5.1.1
     dev: true
 
-  /unplugin-auto-import/0.12.0:
-    resolution: {integrity: sha512-y1flixUHt0UioxeUwXe4N9GmIJskBz7uoC2qFGaUJO1feN9PYITHhRVqfXxYt7VAaZ24InNIeZIAIoQbRm3ZPw==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      '@vueuse/core': '*'
-    peerDependenciesMeta:
-      '@vueuse/core':
-        optional: true
-    dependencies:
-      '@antfu/utils': 0.7.0
-      '@rollup/pluginutils': 5.0.2
-      local-pkg: 0.4.2
-      magic-string: 0.26.7
-      unimport: 1.0.1
-      unplugin: 1.0.0
-    transitivePeerDependencies:
-      - rollup
-    dev: true
-
   /unplugin-icons/0.14.14:
     resolution: {integrity: sha512-5apStlsB9AetB7JQ0DpHG+aFNGQOL8yrO+6XbYadywMXwCeLAPDPdSW0gWd8R3aB/rER1PM+LQikXlaakHH1Uw==}
     peerDependencies:
@@ -6049,6 +5955,7 @@ packages:
       chokidar: 3.5.3
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.6
+    dev: false
 
   /update-browserslist-db/1.0.9_browserslist@4.21.4:
     resolution: {integrity: sha512-/xsqn21EGVdXI3EXSum1Yckj3ZVZugqyOZQ/CxYPBD/R+ko9NSUScf8tFF4dOKY+2pvSSJA/S+5B8s4Zr4kyvg==}
@@ -6246,9 +6153,11 @@ packages:
   /webpack-sources/3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
+    dev: false
 
   /webpack-virtual-modules/0.4.6:
     resolution: {integrity: sha512-5tyDlKLqPfMqjT3Q9TAqf2YqjwmnUleZwzJi1A5qXnlBCdj2AtOJ6wAWdglTIDOPgOiOrXeBeFcsQ8+aGQ6QbA==}
+    dev: false
 
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

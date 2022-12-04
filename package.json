@@ -4,15 +4,15 @@
   "scripts": {
     "dev": "astro dev",
     "dev:host": "astro dev --host",
-    "build": "astro check && tsc --noEmit && astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/svelte": "^1.0.2",
     "@fontsource/fira-code": "^4.5.12",
     "@fontsource/poppins": "^4.5.10",
-    "@prisma/client": "^4.7.0",
-    "astro-compress": "^1.1.15",
+    "@prisma/client": "^4.7.1",
+    "astro-compress": "^1.1.17",
     "daisyui": "^2.42.1",
     "svelte": "^3.53.1",
     "unplugin-icons": "^0.14.14"
@@ -37,15 +37,14 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-svelte": "^2.13.1",
+    "eslint-plugin-svelte": "^2.14.0",
     "eslint-plugin-tailwindcss": "^3.7.1",
     "eslint-plugin-unicorn": "^45.0.1",
     "prettier": "^2.8.0",
     "prettier-plugin-astro": "^0.7.0",
     "prettier-plugin-svelte": "^2.8.1",
-    "prisma": "^4.7.0",
+    "prisma": "^4.7.1",
     "tailwindcss-debug-screens": "^2.2.1",
-    "typescript": "^4.9.3",
-    "unplugin-auto-import": "^0.12.0"
+    "typescript": "^4.9.3"
   }
 }
