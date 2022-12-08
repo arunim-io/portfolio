@@ -1,0 +1,10 @@
+---
+import Document from './Document.astro';
+import Root from './Root.svelte';
+---
+
+<Document>
+  <Root client:load>
+    <slot />
+  </Root>
+</Document>

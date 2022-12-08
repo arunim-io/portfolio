@@ -8,6 +8,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@astrojs/mdx": "^0.12.1",
     "@astrojs/svelte": "^1.0.2",
     "@fontsource/fira-code": "^4.5.12",
     "@fontsource/poppins": "^4.5.10",
@@ -37,6 +38,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-mdx": "^2.0.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-svelte": "^2.14.0",
     "eslint-plugin-tailwindcss": "^3.7.1",

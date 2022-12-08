@@ -1,8 +1,20 @@
 {
   "cSpell.words": ["akar", "brainandbones", "SAST"],
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "svelte"],
+  "eslint.validate": [
+    "markdown",
+    "mdx",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "astro",
+    "svelte"
+  ],
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "tailwindCSS.classAttributes": ["class"]
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+  "eslint.runtime": "node"
 }

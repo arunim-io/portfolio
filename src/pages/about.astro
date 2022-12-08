@@ -1,36 +1,33 @@
 ---
 import TechList from '~/components/TechList.svelte';
-import Document from '~/layouts/Document.astro';
-import Main from '~/layouts/Main.svelte';
+import Base from '~/layouts/Base.astro';
 ---
 
-<Document>
-  <Main client:load>
-    <section class="space-y-10">
-      <h1>About Me</h1>
-      <div class="space-y-5">
-        <p>
-          Hello, I'm Mugdha Arunim Ahmed, a self-taught full stack developer from Bangladesh. My
-          journey started during the COVID-19 outbreak when I was in the 8th standard.
-        </p>
-        <p>
-          I primarily develop in
-          <a href="https://djangoproject.com/">Django</a> and
-          <a href="https://reactjs.org">React</a>, but I'm also learning
-          <a href="https://flutter.dev/">Flutter</a> for developing applications that work in Windows,
-          MacOS, Android & IOS.
-        </p>
-        <p>
-          Due to my studies, I've not been able to contribute to the open source community, but I
-          try my best to do so. My one and only wish is to make something that will be beneficial
-          for millions of people around the world and leave a mark of my existence in the history of
-          this world.
-        </p>
-      </div>
-    </section>
-    <section class="space-y-10">
-      <h2>Technologies I am experienced with</h2>
-      <TechList />
-    </section>
-  </Main>
-</Document>
+<Base>
+  <section class="space-y-10">
+    <h1>About Me</h1>
+    <div class="space-y-5">
+      <p>
+        Hello, I'm Mugdha Arunim Ahmed, a self-taught full stack developer from Bangladesh. My
+        journey started during the COVID-19 outbreak when I was in the 8th standard.
+      </p>
+      <p>
+        I primarily develop in
+        <a href="https://djangoproject.com/">Django</a> and
+        <a href="https://reactjs.org">React</a>, but I'm also learning
+        <a href="https://flutter.dev/">Flutter</a> for developing applications that work in Windows,
+        MacOS, Android & IOS.
+      </p>
+      <p>
+        Due to my studies, I've not been able to contribute to the open source community, but I try
+        my best to do so. My one and only wish is to make something that will be beneficial for
+        millions of people around the world and leave a mark of my existence in the history of this
+        world.
+      </p>
+    </div>
+  </section>
+  <section class="space-y-10">
+    <h2>Technologies I am experienced with</h2>
+    <TechList />
+  </section>
+</Base>
