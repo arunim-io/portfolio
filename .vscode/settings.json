@@ -15,6 +15,5 @@
   },
   "eslint.options": {
     "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
-  },
-  "eslint.runtime": "node"
+  }
 }
