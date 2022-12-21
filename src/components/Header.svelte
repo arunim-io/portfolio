@@ -18,11 +18,9 @@
 </script>
 
 <AppBar>
-  <svelte:fragment slot="lead">
-    <a href="/">
-      <h3>Arunim's Portfolio</h3>
-    </a>
-  </svelte:fragment>
+  <a href="/" slot="lead">
+    <img alt="logo" src="/logo/logo.svg" class="h-10 w-10" />
+  </a>
   <svelte:fragment slot="trail">
     <div class="hidden sm:block">
       {#each links as { href, name }}
