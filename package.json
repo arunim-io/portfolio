@@ -5,7 +5,9 @@
     "dev": "astro dev",
     "dev:host": "astro dev --host",
     "build": "astro check && astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "admin": "prisma studio",
+    "db:migrate": "prisma migrate"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.13.0",
@@ -26,6 +28,7 @@
     "@iconify-json/material-symbols": "^1.1.26",
     "@iconify-json/mdi": "^1.1.39",
     "@iconify-json/simple-icons": "^1.1.39",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "^18.11.17",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",

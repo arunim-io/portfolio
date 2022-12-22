@@ -1,0 +1,36 @@
+---
+import Base from '~/layouts/Base.astro';
+import Document from '~/layouts/Document.astro';
+import { prisma } from '~/prisma';
+
+const data = await prisma.post.findMany();
+---
+
+<Document>
+  <Base>
+    {
+      data.length === 0 ? (
+        <div class="flex h-[calc(100vh-235px)] items-center justify-center">Nothing to show</div>
+      ) : (
+        <ul class="grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-2.5 lg:grid-cols-3 lg:gap-x-5 xl:grid-cols-4">
+          {data
+            .filter(({ status }) => status === 'draft')
+            .map(({ cover, title, content, status }) => (
+              <article class="card card-glass">
+                <header>
+                  <img src={cover} alt={title} class="w-full" />
+                </header>
+                <section class="space-y-5 p-4">
+                  <h3>{title}</h3>
+                  <p class="line-clamp-3">{content}</p>
+                </section>
+                <footer class="card-footer">
+                  <span class="badge">{status}</span>
+                </footer>
+              </article>
+            ))}
+        </ul>
+      )
+    }
+  </Base>
+</Document>
