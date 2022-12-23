@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["akar", "brainandbones", "SAST"],
+  "cSpell.words": ["akar", "brainandbones", "frontmatter", "SAST"],
   "eslint.validate": [
     "markdown",
     "mdx",
