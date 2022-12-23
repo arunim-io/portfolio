@@ -1,0 +1,19 @@
+---
+layout: '~/layouts/BlogPost.astro'
+id: {{id}}
+title: {{title}}
+{{#if subtitle}}
+subtitle: {{subtitle}}
+{{/if}}
+{{#if cover}}
+cover: {{cover}}
+{{/if}}
+{{#if types}}
+types: {{types}}
+{{/if}}
+draft: true
+createdAt: {{date}}
+updatedAt: {{date}}
+---
+
+<!-- Start Writing over here -->

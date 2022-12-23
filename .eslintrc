@@ -36,13 +36,6 @@
         "extraFileExtensions": [".svelte"],
         "parser": "@typescript-eslint/parser"
       }
-    },
-    {
-      "files": ["*.md", "*.mdx"],
-      "extends": ["plugin:mdx/recommended"],
-      "settings": {
-        "mdx/code-blocks": true
-      }
     }
   ],
   "parser": "@typescript-eslint/parser",
@@ -56,6 +49,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier", "import"],
   "rules": {
+    "no-undef": "off",
     "import/order": [
       "warn",
       {
