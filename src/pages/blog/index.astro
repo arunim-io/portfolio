@@ -1,39 +1,36 @@
 ---
 import Base from '~/layouts/Base.astro';
-import Document from '~/layouts/Document.astro';
 
-const data = await Astro.glob<BlogPost>('./posts/**/post.md');
+const data = await Astro.glob<BlogPost>('./posts/**/index.md');
 ---
 
-<Document>
-  <Base>
-    {
-      data.length === 0 ? (
-        <div class="flex h-[calc(100vh-235px)] items-center justify-center">Nothing to show</div>
-      ) : (
-        <ul class="grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-2.5 lg:grid-cols-3 lg:gap-x-5 xl:grid-cols-4">
-          {data
-            .filter(({ frontmatter: { draft } }) => draft === false)
-            .map(({ frontmatter: { cover, title, subtitle, types } }) => (
-              <article class="card card-glass">
-                <header>
-                  <img src={cover} alt={title} class="w-full" />
-                </header>
-                <section class="space-y-5 p-4">
-                  <h3>{title}</h3>
-                  <p class="line-clamp-3">{subtitle}</p>
-                </section>
-                {types ? (
-                  <footer class="card-footer">
-                    {types.map((type) => (
-                      <span class="badge">{type}</span>
-                    ))}
-                  </footer>
-                ) : undefined}
-              </article>
-            ))}
-        </ul>
-      )
-    }
-  </Base>
-</Document>
+<Base>
+  {
+    data.length === 0 ? (
+      <div class="flex h-[calc(100vh-235px)] items-center justify-center">Nothing to show</div>
+    ) : (
+      <ul class="grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-2.5 lg:grid-cols-3 lg:gap-x-5 xl:grid-cols-4">
+        {data
+          .filter(({ frontmatter: { draft } }) => draft === false)
+          .map(({ url, frontmatter: { cover, title, subtitle, tags } }) => (
+            <a href={url} class="card card-glass">
+              <header>
+                <img src={cover} alt={title} class="w-full" />
+              </header>
+              <section class="space-y-5 p-4">
+                <h3>{title}</h3>
+                <p class="line-clamp-3">{subtitle}</p>
+              </section>
+              {tags ? (
+                <footer class="card-footer">
+                  {tags.map((tag) => (
+                    <span class="badge">{tag}</span>
+                  ))}
+                </footer>
+              ) : undefined}
+            </a>
+          ))}
+      </ul>
+    )
+  }
+</Base>

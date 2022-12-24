@@ -1,10 +1,12 @@
 ---
 import Document from './Document.astro';
 import Root from './Root.svelte';
+
+const { props } = Astro;
 ---
 
 <Document>
-  <Root client:load>
+  <Root client:load class={props.class}>
     <slot />
   </Root>
 </Document>

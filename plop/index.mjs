@@ -23,16 +23,17 @@ export const blogPostGenerator = {
     },
     {
       type: 'input',
-      name: 'types',
-      message: 'What topics are related to this post?',
-      default: '[]',
+      name: 'tags',
+      message: 'What topics are related to this post? (Must be comma separated)',
+      default: '',
+      transformer: (input) => `[${input}]`,
     },
   ],
   actions: [
     {
       type: 'add',
       templateFile: './plop/templates/post.md.hbs',
-      path: './src/pages/blog/posts/{{kebabCase title}}/post.md',
+      path: './src/pages/blog/posts/{{kebabCase title}}/index.md',
     },
   ],
 };

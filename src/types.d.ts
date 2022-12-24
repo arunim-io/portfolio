@@ -4,7 +4,7 @@ interface BlogPost {
   subtitle?: string;
   cover?: string;
   draft: boolean;
-  types?: string[];
+  tags?: string[];
   createdAt: string;
   updatedAt: string;
 }

@@ -1,6 +1,5 @@
 /// @ts-check
 
-import { setBlogPostId } from './plop/helpers.mjs';
 import { blogPostGenerator } from './plop/index.mjs';
 
 /**
@@ -11,6 +10,4 @@ export default function (plop) {
   plop.load('plop-helper-date');
 
   plop.setGenerator('post', blogPostGenerator);
-
-  plop.setHelper('id', setBlogPostId);
 }

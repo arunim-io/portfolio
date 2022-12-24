@@ -1,6 +1,5 @@
 ---
-layout: '~/layouts/BlogPost.astro'
-id: {{id}}
+# layout: '~/layouts/BlogPost.astro'
 title: {{title}}
 {{#if subtitle}}
 subtitle: {{subtitle}}
@@ -8,9 +7,7 @@ subtitle: {{subtitle}}
 {{#if cover}}
 cover: {{cover}}
 {{/if}}
-{{#if types}}
-types: {{types}}
-{{/if}}
+tags: [{{tags}}]
 draft: true
 createdAt: {{date}}
 updatedAt: {{date}}
