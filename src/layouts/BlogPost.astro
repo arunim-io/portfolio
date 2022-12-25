@@ -15,7 +15,6 @@ const date = new Date(frontmatter.updatedAt).toLocaleDateString('en-gb', {
 ---
 
 <Base class="mx-5 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-60">
-  <!-- TODO: Construct Layout -->
   <header class="flex items-center justify-center">
     <img
       src={frontmatter.cover}
@@ -24,12 +23,13 @@ const date = new Date(frontmatter.updatedAt).toLocaleDateString('en-gb', {
     />
   </header>
   <main class="my-10">
+    <!-- TODO: Table of contents -->
     <section class="flex flex-col space-y-5 text-start">
       <h4 class="font-extralight">{date}</h4>
       <h1 class="text-5xl font-bold">{frontmatter.title}</h1>
       <h2 class="font-medium text-surface-300/50">{frontmatter.subtitle}</h2>
     </section>
-    <section class="my-20">
+    <section class="md-content my-20 space-y-5">
       <slot />
     </section>
   </main>

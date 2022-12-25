@@ -15,6 +15,7 @@ const config = {
     require('@brainandbones/skeleton/tailwind/theme.cjs'),
     require('tailwindcss-debug-screens'),
     require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/typography'),
     plugin(function ({ addComponents }) {
       addComponents({});
     }),

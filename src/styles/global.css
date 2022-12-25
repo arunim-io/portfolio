@@ -2,3 +2,23 @@ html,
 body {
   @apply h-full overflow-hidden;
 }
+
+code {
+  @apply !bg-transparent !text-inherit;
+}
+
+.md-content > h1 {
+  @apply !mt-20;
+}
+
+.md-content > p {
+  @apply prose;
+}
+
+.md-content > ul {
+  @apply list-disc list-inside;
+}
+
+.md-content > ol {
+  @apply list-decimal list-inside;
+}
