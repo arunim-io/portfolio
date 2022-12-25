@@ -1,7 +1,36 @@
 ---
+import type { MarkdownLayoutProps } from 'astro';
+
 import Base from './Base.astro';
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+type Props = MarkdownLayoutProps<BlogPost>;
+
+const { frontmatter } = Astro.props;
+const date = new Date(frontmatter.updatedAt).toLocaleDateString('en-gb', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
 ---
 
-<Base>
-  <slot />
+<Base class="mx-5 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-60">
+  <!-- TODO: Construct Layout -->
+  <header class="flex items-center justify-center">
+    <img
+      src={frontmatter.cover}
+      alt={frontmatter.title}
+      class="h-[40vh] w-full sm:h-[50vh] md:w-[90vw] lg:w-[60vw] xl:h-[75vh] xl:w-full"
+    />
+  </header>
+  <main class="my-10">
+    <section class="flex flex-col space-y-5 text-start">
+      <h4 class="font-extralight">{date}</h4>
+      <h1 class="text-5xl font-bold">{frontmatter.title}</h1>
+      <h2 class="font-medium text-surface-300/50">{frontmatter.subtitle}</h2>
+    </section>
+    <section class="my-20">
+      <slot />
+    </section>
+  </main>
 </Base>

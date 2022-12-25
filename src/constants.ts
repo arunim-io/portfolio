@@ -12,6 +12,7 @@ import MdiTailwind from '~icons/mdi/tailwind';
 import SimpleIconsAstro from '~icons/simple-icons/astro';
 import SimpleIconsDart from '~icons/simple-icons/dart';
 import SimpleIconsDjango from '~icons/simple-icons/django';
+import SimpleIconsFastapi from '~icons/simple-icons/fastapi';
 import SimpleIconsRedux from '~icons/simple-icons/redux';
 
 export const links = [
@@ -33,4 +34,5 @@ export const skills = [
   { name: 'Dart', icon: SimpleIconsDart },
   { name: 'Flutter', icon: MaterialSymbolsFlutter },
   { name: 'astro', icon: SimpleIconsAstro },
+  { name: 'FastAPI', icon: SimpleIconsFastapi },
 ];

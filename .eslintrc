@@ -26,6 +26,16 @@
       "parserOptions": {
         "extraFileExtensions": [".astro"],
         "parser": "@typescript-eslint/parser"
+      },
+      "rules": {
+        "unicorn/prevent-abbreviations": [
+          "error",
+          {
+            "allowList": {
+              "Props": true
+            }
+          }
+        ]
       }
     },
     {
