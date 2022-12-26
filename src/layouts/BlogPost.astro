@@ -6,8 +6,8 @@ import Base from './Base.astro';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 type Props = MarkdownLayoutProps<BlogPost>;
 
-const { frontmatter } = Astro.props;
-const date = new Date(frontmatter.updatedAt).toLocaleDateString('en-gb', {
+const { updatedAt, title, subtitle, cover } = Astro.props.frontmatter;
+const date = new Date(updatedAt).toLocaleDateString('en-gb', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
@@ -17,8 +17,8 @@ const date = new Date(frontmatter.updatedAt).toLocaleDateString('en-gb', {
 <Base class="mx-5 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-60">
   <header class="flex items-center justify-center">
     <img
-      src={frontmatter.cover}
-      alt={frontmatter.title}
+      src={cover}
+      alt={title}
       class="h-[40vh] w-full sm:h-[50vh] md:w-[90vw] lg:w-[60vw] xl:h-[75vh] xl:w-full"
     />
   </header>
@@ -26,8 +26,8 @@ const date = new Date(frontmatter.updatedAt).toLocaleDateString('en-gb', {
     <!-- TODO: Table of contents -->
     <section class="flex flex-col space-y-5 text-start">
       <h4 class="font-extralight">{date}</h4>
-      <h1 class="text-5xl font-bold">{frontmatter.title}</h1>
-      <h2 class="font-medium text-surface-300/50">{frontmatter.subtitle}</h2>
+      <h1 class="text-5xl font-bold">{title}</h1>
+      <h2 class="font-medium text-surface-300/50">{subtitle}</h2>
     </section>
     <section class="md-content my-20 space-y-5">
       <slot />

@@ -3,16 +3,12 @@ body {
   @apply h-full overflow-hidden;
 }
 
-code {
-  @apply !bg-transparent !text-inherit;
+.md-content > pre > code {
+  @apply !bg-transparent;
 }
 
 .md-content > h1 {
   @apply !mt-20;
-}
-
-.md-content > p {
-  @apply prose;
 }
 
 .md-content > ul {

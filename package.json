@@ -14,7 +14,6 @@
     "@fontsource/fira-code": "^4.5.12",
     "@fontsource/poppins": "^4.5.10",
     "astro-compress": "^1.1.24",
-    "highlight.js": "^11.7.0",
     "svelte": "^3.55.0",
     "unplugin-icons": "^0.14.15"
   },
@@ -27,7 +26,6 @@
     "@iconify-json/mdi": "^1.1.39",
     "@iconify-json/simple-icons": "^1.1.39",
     "@tailwindcss/line-clamp": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.8",
     "@types/node": "^18.11.17",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",

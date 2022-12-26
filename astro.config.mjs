@@ -20,4 +20,10 @@ export default defineConfig({
       external: ['svgo'],
     },
   },
+  markdown: {
+    shikiConfig: {
+      wrap: true,
+      theme: 'dracula',
+    },
+  },
 });
